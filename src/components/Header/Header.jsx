@@ -7,7 +7,7 @@ import { navigation } from "../../constants";
 const Header = () => {
     const [openNavigation, setOpenNavigation] = useState(false);
     const [isNavItemDropdown, setIsNavItemDropdown] = useState(false);
-    const [navUrl, setNavUrl] = useState("");
+    // const [navUrl, setNavUrl] = useState("");
     const dropdownRef = useRef(null);
     const navigate = useNavigate();
     const pathname = useLocation();
