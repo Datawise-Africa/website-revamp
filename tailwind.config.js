@@ -1,34 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+
 export default {
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-    theme: {
-      extend: {
-        colors: {
-          color: {
-            1: "#AC6AFF",
-            2: "#FFC876",
-            3: "#FF776F",
-            4: "#7ADB78",
-            5: "#858DFF",
-            6: "#FF98E2",
-            7: "#F7FDFA",
-          },
-          stroke: {
-            1: "#26242C",
-          },
-          n: {
-            1: "#FFFFFF",
-            2: "#E5E7EB",
-            3: "#0F2542",
-            4: "#26A37E",
-          },
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        color: {
+          1: "#AC6AFF",
+          2: "#FFC876",
+          3: "#FF776F",
+          4: "#7ADB78",
+          5: "#858DFF",
+          6: "#FF98E2",
+          7: "#F7FDFA",
         },
-        fontFamily: {
-          sans: ["var(--font-sora)", ...fontFamily.sans],
-          code: "var(--font-code)",
-          grotesk: "var(--font-grotesk)",
+        stroke: {
+          1: "#26242C",
         },
         n: {
           1: "#FFFFFF",
@@ -37,13 +26,10 @@ export default {
           4: "#26A37E",
         },
       },
-
       fontFamily: {
-       
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
-        
       },
       letterSpacing: {
         tagline: ".15em",
@@ -79,6 +65,7 @@ export default {
       },
     },
   },
+
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
