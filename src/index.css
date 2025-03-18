@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -17,6 +18,13 @@
 }
 
 @layer base {
+  h1{
+    font-weight: bold;
+    font-family: var(--font-sora);
+    
+    
+  }
+  
   h1{
     font-weight: bold;
     font-family: var(--font-sora);
@@ -160,3 +168,6 @@
   background-color: #28a745; /* Green color */
 }
 
+.lora-font {
+  font-family: 'Lora', serif;
+}
