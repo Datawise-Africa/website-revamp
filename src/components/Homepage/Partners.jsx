@@ -11,10 +11,10 @@ const Partners = () => {
   return (
     <div className="bg-white py-12 px-6 text-center">
         <div className="bg-[#F7FDFA] px-6 py-12 text-center">
-    <h3 className="text-[#26A37E] text-sm font-semibold tracking-wide uppercase">
+    <h3 className="text-[#26A37E] text-sm font-semibold tracking-widest uppercase">
         Our Partners
       </h3>
-      <h1 className="text-3xl font-bold text-gray-900 mt-2">
+      <h1 className="text-3xl text-gray-900 mt-2">
         Collaborating for a Smarter Africa
       </h1>
       <div className="flex justify-center items-center flex-wrap gap-8 mt-8">
@@ -30,7 +30,7 @@ const Partners = () => {
       </div>
 
       {/* Partner With Us Section */}
-      <div className="mt-8 bg-[#26A37E] text-white p-6 md:p-6 max-w-xl max-h-xl mx-auto md:flex md:items-center rounded-2xl">
+      <div className="mt-8 bg-[#26A37E] text-white p-6 md:p-6 w-[800px] h-[400px] mx-auto md:flex md:items-center rounded-2xl">
 
         <div className="md:w-1/2">
           <h3 className="text-2xl font-bold font-serif text-left ">Partner With Us</h3>
