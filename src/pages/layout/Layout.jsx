@@ -8,7 +8,6 @@ const Layout = () => {
   return (
     <>
       <Header />
-
       <HeroSection/>
       {/* <div className="min-h-screen">
         <Outlet />
