@@ -54,7 +54,7 @@ jobs:
           payload: |
             {
               "channel": "code-reviews",
-              "text": "PR Checks ${{ job.status }} for #${{ github.event.pull_request.number }} by ${{ github.actor }}",
+              "text": "PR Checks ${{ job.status }} for #${{ github.event.pull_request.number }} - *${{ github.event.pull_request.title }}* by ${{ github.actor }}",
               "attachments": [
                 {
                   "color": "#36a64f",
