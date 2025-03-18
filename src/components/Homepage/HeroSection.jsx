@@ -49,17 +49,16 @@ const Hero = () => {
     setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  // Auto-slide effect every 5 seconds
+  
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change slide every 5 seconds
+    }, 8000); 
 
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [currentIndex]); // Re-run when currentIndex changes
-
+    return () => clearInterval(interval); 
+  }, [currentIndex]); 
   return (
-    <div className="relative w-full h-screen mt-14 overflow-hidden hero-slider-container">
+    <div className="relative w-full h-screen mt-16 px-16 overflow-hidden hero-slider-container mb-40">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -67,14 +66,14 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full flex justify-center items-center hero-slide">
             <div className="hero-slide-content flex flex-col md:flex-row items-center">
-              <div className="text-section max-w-lg text-center md:text-left">
-                <h1 className="text-3xl text-gray-900">
+              <div className="text-section mt-20 max-w-lg text-center md:text-left">
+                <h1 className="text-7xl lora-font font-size-64px text-gray-900">
                   {slide.title} <span className={`block ${slide.highlightColor}`}>{slide.highlight}</span>
                 </h1>
-                <p className="mt-4 text-lg text-gray-700">{slide.description}</p>
+                <p className="mt-4 text-3xl  text-gray-700">{slide.description}</p>
               </div>
-              <div className="image-section mt-6 md:mt-0 md:ml-12">
-                <img src={slide.image} alt={slide.highlight} className="max-w-xs md:max-w-md" />
+              <div className="image-section md:mt-0 md:ml-12">
+                <img src={slide.image} alt={slide.highlight} className="max-w-lg mt-16 md:max-w-md" />
               </div>
             </div>
           </div>
@@ -82,15 +81,15 @@ const Hero = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <button onClick={prevSlide} className="absolute top-1/2 left-4 transform -translate-y-1/2 ">
-        <FaChevronLeft className="text-gray-600 text-3xl" />
+      <button onClick={prevSlide} className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 ">
+        <FaChevronLeft className="text-gray-600 text-5xl" />
       </button>
-      <button onClick={nextSlide} className="absolute top-1/2 right-4 transform -translate-y-1/2">
-        <FaChevronRight className="text-gray-600 text-3xl" />
+      <button onClick={nextSlide} className="absolute p-8 top-1/2 right-4 transform -translate-y-1/2">
+        <FaChevronRight className="text-gray-600 text-5xl" />
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-4 left-20 flex space-x-3 custom-dots-container">
+      <div className="absolute bottom-8 px-32 flex space-x-3 custom-dots-container">
   {slides.map((_, index) => (
     <div 
       key={index} 
