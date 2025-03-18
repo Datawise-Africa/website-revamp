@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import "tailwindcss";
 
@@ -161,3 +159,6 @@
   background-color: #28a745; /* Green color */
 }
 
+.lora-font {
+  font-family: 'Lora', serif;
+}
