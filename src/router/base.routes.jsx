@@ -7,15 +7,15 @@ import ContactUs from "../pages/contact-us/ContactUs";
 const baseRoutes = [
     {
         path: "/",
-        component: <Home />,
+        element: <Home />,
     },
     {
         path: "/projects",
-        component: <Projects />,
+        element: <Projects />,
     },
     {
         path: "/datalab",
-        component: <Datalab />,
+        element: <Datalab />,
     },
     {
         path: "/about-us",

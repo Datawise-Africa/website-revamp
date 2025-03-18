@@ -2,20 +2,33 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      colors: {
-        color: {
-          1: "#AC6AFF",
-          2: "#FFC876",
-          3: "#FF776F",
-          4: "#7ADB78",
-          5: "#858DFF",
-          6: "#FF98E2",
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+      extend: {
+        colors: {
+          color: {
+            1: "#AC6AFF",
+            2: "#FFC876",
+            3: "#FF776F",
+            4: "#7ADB78",
+            5: "#858DFF",
+            6: "#FF98E2",
+            7: "#F7FDFA",
+          },
+          stroke: {
+            1: "#26242C",
+          },
+          n: {
+            1: "#FFFFFF",
+            2: "#E5E7EB",
+            3: "#0F2542",
+            4: "#26A37E",
+          },
         },
-        stroke: {
-          1: "#26242C",
+        fontFamily: {
+          sans: ["var(--font-sora)", ...fontFamily.sans],
+          code: "var(--font-code)",
+          grotesk: "var(--font-grotesk)",
         },
         n: {
           1: "#FFFFFF",
@@ -65,7 +78,8 @@ export default {
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
       },
     },
-  },
+  
+
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
