@@ -26,7 +26,7 @@ export default {
       },
 
       fontFamily: {
-        lora: ['Lora', 'serif'],
+       
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
@@ -83,7 +83,7 @@ export default {
             {},
         },
         ".h3": {
-          "@apply font-lora text-[2rem] leading-normal md:text-[2.5rem]": {},
+          "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
         },
         ".h4": {
           "@apply text-[2rem] leading-normal": {},

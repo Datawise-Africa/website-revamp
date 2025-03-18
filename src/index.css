@@ -19,7 +19,7 @@
 @layer base {
   h1{
     font-weight: bold;
-    @apply font-lora
+    
     
   }
   
