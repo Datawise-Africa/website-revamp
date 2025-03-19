@@ -3,6 +3,7 @@ import Projects from "../pages/projects/Projects";
 import Datalab from "../pages/datalab/Datalab";
 import AboutUs from "../pages/about-us/AboutUs";
 import ContactUs from "../pages/contact-us/ContactUs";
+import Jobs from "../pages/jobs/Jobs";
 
 const baseRoutes = [
     {
@@ -25,7 +26,10 @@ const baseRoutes = [
         path: "/contact-us",
         element: <ContactUs />,
     },
-
+    {
+        path: "jobs",
+        element: <Jobs />,
+    }
 ]
 
 export default baseRoutes;
