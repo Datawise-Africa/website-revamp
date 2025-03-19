@@ -28,8 +28,7 @@ const WhatWeDo = () => {
           <img
             src={image1}
             alt="Data"
-            className="w-1/2 h-auto object-cover "
-            // className="flex-1 w-full h-auto object-cover rounded-md shadow"
+            className="flex-1 w-full h-auto object-cover rounded-md shadow"
           />
           <div className="flex-1 text-center lg:text-left px-2">
             <h4 className="text-xl text-[#DD8823] font-semiboldmb-2 ">Data</h4>
@@ -45,7 +44,6 @@ const WhatWeDo = () => {
             src={image2}
             alt="Artificial Intelligence"
             className="w-1/2 h-auto object-cover  "
-            // className="flex-1 w-full h-auto object-cover rounded-md shadow"
           />
           <div className="flex-1 text-center lg:text-left px-2">
             <h4 className="text-xl text-[#129FC8] font-semibold mb-2 ">Artificial Intelligence</h4>
@@ -60,7 +58,7 @@ const WhatWeDo = () => {
           <img
             src={image3}
             alt="Infrastructure"
-            className="w-1/2 h-auto object-cover  rounded-md shadow"
+            className="w-1/2 h-auto object-cover  "
             // className="flex-1 w-full h-auto object-cover rounded-md shadow"
           />
           <div className="flex-1 text-center lg:text-left px-2">
