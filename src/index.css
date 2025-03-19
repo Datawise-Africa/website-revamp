@@ -21,7 +21,12 @@
     font-weight: bold;
     font-family: var(--font-sora);
     
-    
+  }
+  h3{
+    font-family: var(--font-sora);
+  }
+  p{
+    font-family: var(--font-sora);
   }
   
   h1{
@@ -101,8 +106,9 @@
 /* Container for the slider */
 .hero-slider-container {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background-color: #ffffff;
+  padding-right: 40px;
 }
 
 /* Slide content layout */
@@ -139,19 +145,16 @@
 .text-section p {
   font-size: 22px;
   font-weight: 400;
-
+  font-family: var(--font-sora);
   color: #6c757d; /* Subtle gray text */
 }
 
-.image-section img {
-  max-width: 100%;
-}
 
 /* Custom Dots Styling */
 .custom-dots-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: -20px; /* Adjust position */
+  margin-top: -80px; /* Adjust position */
 }
 
 .custom-dot {
