@@ -9,7 +9,7 @@ const slides = [
       "High-quality, ethical data is  the foundation of progress. We collect, curate, and analyze datasets that empower decision-makers across Africa.",
     image: "/assets/homepage/greenrafiki.png",
     imageClass: "w-300 h-120 ",
-    highlightColor: "text-green-600",
+    highlightColor:"text-[#26A37E]",
   },
   {
     title: "We are",
@@ -18,7 +18,7 @@ const slides = [
       "From Infrastructure to AI, we are pioneering the digital backbone of an Africa that leads in data and innovation.",
     image: "/assets/homepage/pana.png",
     imageClass: "w-140 h-120  ",
-    highlightColor: "text-orange-500",
+    highlightColor: "text-[#DD8823]",
   },
   {
     title: "We are",
@@ -27,7 +27,7 @@ const slides = [
       "Our work is driven by the needs of African communities, ensuring that our research and innovations serve real people in meaningful ways.",
     image: "/assets/homepage/pinkrafiki.png",
     imageClass: "w-320 h-120 ",
-    highlightColor: "text-pink-500",
+    highlightColor: "text-[#EE3481]",
   },
   {
     title: "We are",
@@ -36,7 +36,7 @@ const slides = [
       "AI has the potential to reshape Africa’s future. We develop ethical, community-focused AI solutions tailored to local needs.",
     image: "/assets/homepage/bluerafiki.png",
     imageClass: "w-240 h-120 ",
-    highlightColor: "text-blue-600",
+    highlightColor: "text-[#1FB5DD]",
   },
 ];
 
@@ -75,7 +75,7 @@ const Hero = () => {
                 <h1 className="text-7xl lora-font font-size-64px text-gray-900">
                   {slide.title} <span className={`block ${slide.highlightColor}`}>{slide.highlight}</span>
                 </h1>
-                <p className="mt-4 text-3xl  text-gray-700">{slide.description}</p>
+                <p className="mt-4 text-3xl text-gray-700">{slide.description}</p>
               </div>
               <div className="image-section md:mt-0 md:ml-12">
                 <img src={slide.image} alt={slide.highlight} className={slide.imageClass} />
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
           </div>
         ))}
-      </divHeader>
+      </div >
 
       {/* Navigation Buttons */}
       <button onClick={prevSlide} className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 ">

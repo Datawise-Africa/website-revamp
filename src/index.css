@@ -139,11 +139,11 @@
 }
 
 .text-section h1 .highlight {
-  color: #28a745; /* Green highlight */
+  color: #26A37E; /* Green highlight */
 }
 
 .text-section p {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   font-family: var(--font-sora);
   color: #6c757d; /* Subtle gray text */
@@ -167,7 +167,7 @@
 
 .custom-dot.active {
   width: 40px; /* Wider active dot */
-  background-color: #28a745; /* Green color */
+  background-color: #26A37E; /* Green color */
 }
 
 .lora-font {
