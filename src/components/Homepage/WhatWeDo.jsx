@@ -12,7 +12,7 @@ const WhatWeDo = () => {
       </h3>
 
       {/* Big Heading */}
-      <h2 className="text-3xl font-bold text-center mt-1 mb-2 ">
+      <h2 className="text-3xl font-lora  font-bold text-center mt-1 mb-2 ">
         Solving Real Problems With Data and AI
       </h2>
 
@@ -46,7 +46,7 @@ const WhatWeDo = () => {
             className="w-1/2 h-auto object-cover  "
           />
           <div className="flex-1 text-center lg:text-left px-2">
-            <h4 className="text-xl text-[#129FC8] font-semibold mb-2 ">Artificial Intelligence</h4>
+            <h4 className="text-xl text-[#129FC8] font-semibold mb-2 font-lora">Artificial Intelligence</h4>
             <p className="text-base mt-1">
               We create AI models designed for African communities. Think recommender systems, computer vision, and language models that solve specific, local problems.
             </p>
