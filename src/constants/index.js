@@ -2,25 +2,25 @@ export const navigation = [
     {
         id: "0",
         title: "About Us",
-        path: "/about-us",
+        url: "/about-us",
         dropdownItems: [],
     },
     {
         id: "1",
         title: "Projects",
-        path: "/projects",
+        url: "/projects",
         dropdownItems: [],
     },
     {
         id: "2",
         title: "Datalab",
-        path: "/datalab",
+        url: "/datalab",
         dropdownItems: [],
     },
     {
         id: "3",
         title: "Contact Us",
-        path: "/contact-us",
+        url: "/contact-us",
         dropdownItems: [],
     },
 ]

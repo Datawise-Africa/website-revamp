@@ -93,7 +93,7 @@ const Footer = () => {
             <Link to="/projects">Projects</Link>
           </div>
           <div className="flex flex-col space-y-2">
-            <Link to="#">Jobs</Link>
+            <Link to="/jobs">Jobs</Link>
             <Link to="#">Blogs</Link>
             <Link to="#">Contact Us</Link>
             <Link to="#">Privacy Policy</Link>

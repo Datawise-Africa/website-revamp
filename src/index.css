@@ -21,7 +21,12 @@
     font-weight: bold;
     font-family: var(--font-sora);
     
-    
+  }
+  h3{
+    font-family: var(--font-sora);
+  }
+  p{
+    font-family: var(--font-sora);
   }
   
   h1{
@@ -101,8 +106,9 @@
 /* Container for the slider */
 .hero-slider-container {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background-color: #ffffff;
+  padding-right: 40px;
 }
 
 /* Slide content layout */
@@ -133,25 +139,22 @@
 }
 
 .text-section h1 .highlight {
-  color: #28a745; /* Green highlight */
+  color: #26A37E; /* Green highlight */
 }
 
 .text-section p {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
-
+  font-family: var(--font-sora);
   color: #6c757d; /* Subtle gray text */
 }
 
-.image-section img {
-  max-width: 100%;
-}
 
 /* Custom Dots Styling */
 .custom-dots-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: -20px; /* Adjust position */
+  margin-top: -80px; /* Adjust position */
 }
 
 .custom-dot {
@@ -164,9 +167,13 @@
 
 .custom-dot.active {
   width: 40px; /* Wider active dot */
-  background-color: #28a745; /* Green color */
+  background-color: #26A37E; /* Green color */
 }
 
 .lora-font {
   font-family: 'Lora', serif;
+}
+
+.sore-font {
+  font-family: 'Sora', sans-serif;
 }
