@@ -41,7 +41,7 @@ const Datalab = () => {
       {/* Explore Section */}
       <section className="w-full flex flex-col md:flex-row px-6 md:px-16">
         <div className="md:w-1/2 text-left space-y-4">
-          <h2 className="font-lora font-bold text-[#0F2542] text-[40px] leading-[100%] tracking-[-0.02em]">
+          <h2 className="lora-font font-bold text-[#0F2542] text-[40px] leading-[100%] tracking-[-0.02em]">
             Explore, Analyze, and Share Data with{" "}
             <span className="text-[#26A37E]">Datalab</span>
           </h2>
@@ -80,7 +80,7 @@ const Datalab = () => {
 
            {/* Final Section */}
            <section className="w-full text-center bg-[#F7FDFA] space-y-6 px-6">
-  <h2 className="font-lora font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center text-[#0F2542]">
+  <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center text-[#0F2542]">
     Empower Your Work with DataLab
   </h2>
   <p className="font-sora font-normal text-[22px] leading-[167%] tracking-[-0.03em] text-center text-[#4B5563]">
