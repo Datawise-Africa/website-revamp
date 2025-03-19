@@ -4,6 +4,8 @@ import Datalab from "../pages/datalab/Datalab";
 import AboutUs from "../pages/about-us/AboutUs";
 import ContactUs from "../pages/contact-us/ContactUs";
 import Jobs from "../pages/jobs/Jobs";
+import Partners from "../pages/partners/Partners";
+
 
 const baseRoutes = [
     {
@@ -29,7 +31,12 @@ const baseRoutes = [
     {
         path: "jobs",
         element: <Jobs />,
-    }
+    },
+    {
+        path: "/partners",
+        element: <Partners />,
+    },
+
 ]
 
 export default baseRoutes;
