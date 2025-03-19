@@ -59,7 +59,7 @@ const Hero = () => {
   }, [currentIndex]); 
   return (
     <div className="relative w-full h-screen mt-16 px-16 overflow-hidden hero-slider-container mb-40">
-      <div
+      <divHeader footer
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
@@ -78,7 +78,7 @@ const Hero = () => {
             </div>
           </div>
         ))}
-      </div>
+      </divHeader>
 
       {/* Navigation Buttons */}
       <button onClick={prevSlide} className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 ">
