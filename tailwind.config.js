@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -13,6 +14,7 @@ export default {
           4: "#7ADB78",
           5: "#858DFF",
           6: "#FF98E2",
+          7: "#F7FDFA",
         },
         stroke: {
           1: "#26242C",
@@ -24,13 +26,10 @@ export default {
           4: "#26A37E",
         },
       },
-
       fontFamily: {
-       
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
-        
       },
       letterSpacing: {
         tagline: ".15em",
@@ -66,6 +65,7 @@ export default {
       },
     },
   },
+
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
