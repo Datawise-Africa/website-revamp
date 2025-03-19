@@ -17,7 +17,7 @@ const AboutUs = () => {
           At Datawise Africa, research is at our core. We explore the
           intersections of data, AI, and infrastructure, building solutions
           tailored for Africa’s needs but with a global perspective.
-        </p>
+        </p> 
 
         <a
           href="#"
