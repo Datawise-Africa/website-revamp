@@ -62,6 +62,7 @@ const Hero = () => {
     return () => clearInterval(interval); 
   }, [currentIndex]); 
   return (
+
     <div className="relative w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
       <div
         className="flex transition-transform duration-700 ease-in-out"
@@ -82,7 +83,7 @@ const Hero = () => {
             </div>
           </div>
         ))}
-      </div>
+      </divHeader>
 
       {/* Navigation Buttons */}
       <button onClick={prevSlide} className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 ">
