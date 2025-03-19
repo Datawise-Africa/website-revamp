@@ -19,11 +19,11 @@ const baseRoutes = [
     },
     {
         path: "/about-us",
-        component: <AboutUs />,
+        element: <AboutUs />,
     },
     {
         path: "/contact-us",
-        component: <ContactUs />,
+        element: <ContactUs />,
     },
 
 ]
