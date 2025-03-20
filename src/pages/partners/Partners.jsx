@@ -89,7 +89,6 @@ const PartnersPage = () => {
           </div>
         </div>
       </section>
-
       {/* Partners Section */}
       <section className="w-full max-w-7xl bg-[#F7FDFA] px-6 py-12 text-center">
         <h3
