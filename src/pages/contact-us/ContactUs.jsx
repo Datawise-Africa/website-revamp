@@ -30,6 +30,7 @@ const ContactUs = () => {
 
       {/* Left Section - Contact Information */}
       <div className=" flex flex-col md:flex-row justify-center items-center min-h-[800px] bg-[#F7FDFA] px-6 md:px-12">
+
       <div className="bg-[#D1F2E5] md:p-8 rounded-lg shadow-lg w-full md:w-[580px] h-[600px] h-auto mb-8 ">
         <h2 className="text-lg font-semibold text-[22px] text-gray-900 mt-2">
           Contact Information
@@ -77,7 +78,7 @@ const ContactUs = () => {
       </div>
 
       {/* Right Section - Contact Form */}
-      <div className="bg-white  ml-12 md:p-8 rounded shadow-lg w-800px md:w-[600px] min-h-[60px] mb-8 ">
+      <div className="bg-white  ml-12 md:p-8 rounded-lg shadow-lg w-800px md:w-[600px] min-h-[600px] mb-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
           {/* First Name */}
           <div >
@@ -138,7 +139,7 @@ const ContactUs = () => {
           />
         </div>
 
-        <button className="mt-6 w-full bg-[#26A37E] text-white text-sm font-semibold py-3 rounded hover:bg-green-700 transition">
+        <button className="mt-6 w-full bg-[#26A37E] text-white text-sm font-semibold py-3 rounded hover:bg-green-700 transition mb-6">
           Send Message
         </button>
       </div>
