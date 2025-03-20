@@ -5,6 +5,7 @@ import AboutUs from "../pages/about-us/AboutUs";
 import ContactUs from "../pages/contact-us/ContactUs";
 import Jobs from "../pages/jobs/Jobs";
 import Partners from "../pages/partners/Partners";
+import PartnerForm from "../pages/partners/partnersform";
 
 
 const baseRoutes = [
@@ -31,6 +32,10 @@ const baseRoutes = [
     {
         path: "jobs",
         element: <Jobs />,
+    },
+    {
+        path: "/become-a-partner",
+        element: <PartnerForm/>
     },
     {
         path: "/partners",

@@ -5,6 +5,7 @@ import icon3 from "/assets/partners3.png";
 import arrowIcon from "/assets/datalab7.png";
 import icon1 from "/assets/partner1.png";
 import PartnerForm from "./partnersform";
+import { useNavigate } from "react-router-dom";
 
 const partners = [
   { name: "Lacuna Fund", logo: "/assets/homepage/lacuna-fund-logo.png" },
@@ -14,6 +15,7 @@ const partners = [
 ];
 
 const PartnersPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto w-full flex flex-col items-center p-6 mt-12 space-y-16">
       {/* Hero Section */}
@@ -29,7 +31,9 @@ const PartnersPage = () => {
             future.
           </p>
           <div className="flex justify-center md:justify-start">
-            <button className="w-64px h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
+            <button               onClick={() => navigate("/become-a-partner")}
+
+            className="w-64px h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
               Become a Partner
               <img src={arrowIcon} alt="Arrow Icon" className="w-5 h-5" />
             </button>
