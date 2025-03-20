@@ -19,8 +19,8 @@ const AboutUs = () => {
         </div>
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
-            className="w-full max-w-[550px] lg:h-[490.69px] top-[135.38px]"
-            src="/public/assets/aboutus/cuate.png"
+            className="w-full max-w-[600px] lg:h-[550.69px] top-[135.38px]"
+            src="/public/assets/aboutus/aboutus.svg"
             alt="about us image"
           />
         </div>
@@ -164,20 +164,20 @@ const AboutUs = () => {
       </section>
       <Team/>
 
-      <div className="mt-8 mb-20 bg-[#26A37E] text-white  md:p-6 w-[1000px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
+      <div className="mt-8 mb-20 bg-[#26A37E] text-white  md:p-6 w-[1100px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
         <div className="md:w-1/2 ml-14 ">
-          <h3 className="text-5xl font-bold lora-font text-left ">
+          <h3 className="text-4xl font-bold lora-font text-left ">
             Want to be part <br /> of our mission ?
           </h3>
 
-          <p className="mt-4 text-base text-[20px] font-extralight leading-relaxed tracking-wide text-left">
+          <p className="mt-4 text-base text-[18px] font-extralight leading-relaxed tracking-wide text-left">
             We're always looking for talented <br /> individuals to join our
             team
           </p>
           <p>
             <a
-              href="#"
-              className="mt-4  text-[20px] text-left  leading-relaxed  tracking-wide text-white hover:underline flex items-center"
+              href=""
+              className="mt-4  text-[14px] text-left  leading-relaxed  tracking-wide text-white hover:underline flex items-center"
             >
               View Open Roles <span className="ml-2">→</span>
             </a>
@@ -185,9 +185,9 @@ const AboutUs = () => {
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0 md:ml-8">
           <img
-            src="/assets/homepage/cuate.png"
+            src="/assets/aboutus/ctajoin.svg"
             alt="Collaboration"
-            className="w-full max-w-sm mt-5 mx-auto"
+            className="w-full max-w-2xl mt-5 mx-auto"
           />
         </div>
       </div>

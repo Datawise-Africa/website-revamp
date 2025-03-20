@@ -47,7 +47,7 @@ const Partners = () => {
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0 md:ml-8">
           <img
-            src="/assets/homepage/cuate.png"
+            src="/assets/aboutus/ctapartner.svg"
             alt="Collaboration"
             className="w-full max-w-sm mt-5 mx-auto"
           />
