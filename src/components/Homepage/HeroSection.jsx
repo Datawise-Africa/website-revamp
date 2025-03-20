@@ -7,7 +7,7 @@ const slides = [
     highlight: "Data-Informed",
     description:
       "High-quality, ethical data is  the foundation of progress. We collect, curate, and analyze datasets that empower decision-makers across Africa.",
-    image: "/assets/homepage/greenrafiki.png",
+    image: "/assets/homepage/greenrafiki.svg",
     imageClass: "w-300 h-120 ",
     highlightColor: "text-[#26A37E]",
   },
@@ -16,7 +16,7 @@ const slides = [
     highlight: "Building the Future",
     description:
       "From Infrastructure to AI, we are pioneering the digital backbone of an Africa that leads in data and innovation.",
-    image: "/assets/homepage/pana.png",
+    image: "/assets/homepage/pana.svg",
     imageClass: "w-140 h-120  ",
     highlightColor: "text-[#DD8823]",
   },
@@ -25,7 +25,7 @@ const slides = [
     highlight: "Community-Led",
     description:
       "Our work is driven by the needs of African communities, ensuring that our research and innovations serve real people in meaningful ways.",
-    image: "/assets/homepage/pinkrafiki.png",
+    image: "/assets/homepage/pinkrafiki.svg",
     imageClass: "w-320 h-120 ",
     highlightColor: "text-[#EE3481]",
   },
@@ -34,7 +34,7 @@ const slides = [
     highlight: "AI-Powered",
     description:
       "AI has the potential to reshape Africa’s future. We develop ethical, community-focused AI solutions tailored to local needs.",
-    image: "/assets/homepage/bluerafiki.png",
+    image: "/assets/homepage/bluerafiki.svg",
     imageClass: "w-240 h-120 ",
     highlightColor: "text-[#1FB5DD]",
   },
