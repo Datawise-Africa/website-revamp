@@ -9,7 +9,7 @@ const slides = [
       "High-quality, ethical data is  the foundation of progress. We collect, curate, and analyze datasets that empower decision-makers across Africa.",
     image: "/assets/homepage/greenrafiki.png",
     imageClass: "w-300 h-120 ",
-    highlightColor:"text-[#26A37E]",
+    highlightColor: "text-[#26A37E]",
   },
   {
     title: "We are",
@@ -53,56 +53,71 @@ const Hero = () => {
     setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000); 
+    }, 10000);
 
-    return () => clearInterval(interval); 
-  }, [currentIndex]); 
+    return () => clearInterval(interval);
+  }, [currentIndex]);
   return (
-
-    <div className="relative w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
+    <div className="container mx-auto relative w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="min-w-full flex justify-center items-center hero-slide">
+          <div
+            key={index}
+            className="min-w-full flex justify-center items-center hero-slide"
+          >
             <div className="hero-slide-content flex flex-col md:flex-row items-center">
               <div className="text-section max-w-lg text-center md:text-left">
                 <h1 className="text-7xl lora-font font-size-64px text-gray-900">
-                  {slide.title} <span className={`block ${slide.highlightColor}`}>{slide.highlight}</span>
+                  {slide.title}{" "}
+                  <span className={`block ${slide.highlightColor}`}>
+                    {slide.highlight}
+                  </span>
                 </h1>
-                <p className="mt-4 text-3xl text-gray-700">{slide.description}</p>
+                <p className="mt-4 text-3xl text-gray-700">
+                  {slide.description}
+                </p>
               </div>
               <div className="image-section md:mt-0 md:ml-12">
-                <img src={slide.image} alt={slide.highlight} className={slide.imageClass} />
+                <img
+                  src={slide.image}
+                  alt={slide.highlight}
+                  className={slide.imageClass}
+                />
               </div>
             </div>
           </div>
         ))}
-      </div >
+      </div>
 
       {/* Navigation Buttons */}
-      <button onClick={prevSlide} className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 ">
+      <button
+        onClick={prevSlide}
+        className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 "
+      >
         <FaChevronLeft className="text-gray-600 text-5xl" />
       </button>
-      <button onClick={nextSlide} className="absolute p-8  top-1/2 right-4 transform -translate-y-1/2">
+      <button
+        onClick={nextSlide}
+        className="absolute p-8  top-1/2 right-4 transform -translate-y-1/2"
+      >
         <FaChevronRight className="text-gray-600 text-5xl" />
       </button>
 
       {/* Dots Indicator */}
       <div className="absolute px-24 flex space-x-3 custom-dots-container">
-  {slides.map((_, index) => (
-    <div 
-      key={index} 
-      className={`custom-dot ${index === currentIndex ? "active" : ""}`} 
-    />
-  ))}
-</div>
-
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`custom-dot ${index === currentIndex ? "active" : ""}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="w-full bg-[#F7FDFA] flex justify-center items-center py-6">
+    <div className="container mx-auto w-full bg-[#F7FDFA] flex justify-center items-center py-6">
       <div
         className="w-full bg-[#F7FDFA] p-6  text-left lg:text-center font-sans px-4 lg:px-12"
         style={{ fontFamily: "Sora, sans-serif" }}
