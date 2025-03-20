@@ -3,8 +3,8 @@ import Team from "../../components/Team";
 
 const AboutUs = () => {
   return (
-    <div>
-      <section className="pt-40 ml-40 mr-40   grid grid-cols-1 md:grid-cols-2 ">
+    <div className="container mx-auto">
+      <section className="pt-20 ml-40 mr-40   grid grid-cols-1 md:grid-cols-2 ">
         <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
             Driving Impact Through

@@ -9,7 +9,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <div className="bg-white py-12 px-6 text-center">
+    <div className="container mx-auto bg-white py-12 px-6 text-center">
         <div className="bg-[#F7FDFA] px-6 py-12 text-center">
     <h3 className="text-[#26A37E] text-sm font- tracking-widest uppercase" style={{ letterSpacing: "0.20em" }}>
         Our Partners

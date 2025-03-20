@@ -5,27 +5,27 @@ const Team = () => {
     {
       name: "Dr. Albert Kahira",
       role: "Director",
-      image: "/public/teamMembers/albert-kahira.jpeg", // Replace with actual image paths
+      image: "/assets/teamMembers/albert-kahira.jpeg", // Replace with actual image paths
     },
     {
       name: "Brian Odhiambo",
       role: "Data Scientist",
-      image: "/public/teamMembers/brian.jpg",
+      image: "/assets/teamMembers/brian.jpg",
     },
     {
       name: "Dorothy Chepkonga",
       role: "Operations Lead",
-      image: "/public/teamMembers/dorothy.jpg",
+      image: "/assets/teamMembers/dorothy.jpg",
     },
     {
       name: "Virginia Wanjiru",
       role: "Software Engineer",
-      image: "/public/teamMembers/virginia.jpg",
+      image: "/assets/teamMembers/virginia.jpg",
     },
     {
       name: "Winny Chelangat",
       role: "Software Engineer",
-      image: "/public/teamMembers/winny.jpg",
+      image: "/assets/teamMembers/winny.jpg",
     },
   ];
 

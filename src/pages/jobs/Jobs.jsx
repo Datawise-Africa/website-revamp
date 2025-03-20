@@ -9,7 +9,7 @@ import ourvalues3 from "/assets/jobs/Innovation.png";
 
 const Jobs = () => {
   return (
-    <div className="pt-20 px-5 lg:px-15 xl:px-20 max-lg:py-4">
+    <div className="container mx-auto pt-20 px-5 lg:px-15 xl:px-20 max-lg:py-4">
       <section className="pt-5 grid grid-cols-1 md:grid-cols-2 ">
         <div className="pt-15 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">

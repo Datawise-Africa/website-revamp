@@ -5,7 +5,7 @@ import image3 from "/assets/infrastructure.jpg";
 
 const WhatWeDo = () => {
   return (
-    <div className="max-w-6xl mx-auto w-full px-4 py-6 text-[#0F2542]" style={{ fontFamily: 'Sora, sans-serif' }}>
+    <div className="container mx-auto w-full px-4 py-6 text-[#0F2542]" style={{ fontFamily: 'Sora, sans-serif' }}>
       {/* Small Heading */}
       <h3 className="text-lg font-semibold text-[#26A37E] text-center uppercase tracking-wide mb-2 ">
         WHAT WE DO
