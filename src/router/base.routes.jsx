@@ -6,6 +6,7 @@ import ContactUs from "../pages/contact-us/ContactUs";
 import Jobs from "../pages/jobs/Jobs";
 import Partners from "../pages/partners/Partners";
 
+
 const baseRoutes = [
     {
         path: "/",
@@ -35,6 +36,7 @@ const baseRoutes = [
         path: "/partners",
         element: <Partners />,
     },
+
 ]
 
 export default baseRoutes;
