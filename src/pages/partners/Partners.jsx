@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "/assets/cuate.png";
+import heroImage from "/assets/PartnerHero.svg";
 import icon2 from "/assets/partner2.png";
 import icon3 from "/assets/partners3.png";
 import arrowIcon from "/assets/datalab7.png";
