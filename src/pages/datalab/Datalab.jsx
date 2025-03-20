@@ -7,6 +7,13 @@ import icon4 from "/assets/datalab4.png";
 import icon5 from "/assets/datalab5.png";
 import icon6 from "/assets/datalab6.png";
 import icon7 from "/assets/datalab7.png"; 
+const handleExploreDatasetsClick = () => {
+  window.open(
+    "http://datalab.datawiseafrica.com",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
 
 const Datalab = () => {
   return (
@@ -23,7 +30,9 @@ const Datalab = () => {
             ensuring creator sovereignty.
           </p>
           <div className="flex justify-center md:justify-start">
-            <button className="w-[164px] h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
+            <button
+            onClick={handleExploreDatasetsClick} 
+            className="w-[164px] h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
               Get Started
               <img src={icon7} alt="Arrow Icon" className="w-5 h-5" />
             </button>
@@ -113,7 +122,9 @@ const Datalab = () => {
   </div>
 
   {/* Button */}
-  <button className="px-6 py-3 flex items-center gap-2 bg-[#26A37E] mx-auto text-white font-medium rounded-lg">
+  <button 
+  onClick={handleExploreDatasetsClick}
+  className="px-6 py-3 flex items-center gap-2 bg-[#26A37E] mx-auto text-white font-medium rounded-lg">
     Explore Datasets
     <img src={icon7} alt="Arrow Icon" className="w-5 h-5" />
   </button>
