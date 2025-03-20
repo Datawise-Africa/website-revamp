@@ -1,24 +1,30 @@
 export const navigation = [
     {
         id: "0",
+        title: "Home",
+        url: "/",
+        dropdownItems: [],
+    },
+    {
+        id: "1",
         title: "About Us",
         url: "/about-us",
         dropdownItems: [],
     },
     {
-        id: "1",
+        id: "2",
         title: "Projects",
         url: "/projects",
         dropdownItems: [],
     },
     {
-        id: "2",
+        id: "3",
         title: "Datalab",
         url: "/datalab",
         dropdownItems: [],
     },
     {
-        id: "3",
+        id: "4",
         title: "Contact Us",
         url: "/contact-us",
         dropdownItems: [],
