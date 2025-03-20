@@ -19,8 +19,8 @@ const AboutUs = () => {
         </div>
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
-            className="w-full max-w-[540px] lg:h-[520px] top-[150.38px]"
-            src="/public/assets/aboutus/aboutus.svg"
+            className="w-full max-w-[550px] lg:h-[490.69px] top-[135.38px]"
+            src="/assets/aboutus/cuate.png"
             alt="about us image"
           />
         </div>
