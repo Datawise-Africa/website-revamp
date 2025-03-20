@@ -57,7 +57,7 @@ const Header = () => {
           openNavigation ? "bg-[#0F2542]" : "bg-[#0F2542]/90 backdrop-blur-sm"
         }`}
       >
-        <div className="flex items-center justify-between container mx-auto px-5 lg:px-8 max-lg:py-4">
+        <div className="container mx-auto flex items-center justify-between px-5 lg:px-8 max-lg:py-4">
           <Link to="/" className="w-[12rem]">
             <img
               src={datawise_logo}
