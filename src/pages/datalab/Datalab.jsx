@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "/assets/datalab-hero.png";
+import image1 from "/assets/Datalab Hero.svg";
 import icon1 from "/assets/datalab1.png";
 import icon2 from "/assets/datalab2.png";
 import icon3 from "/assets/datalab3.png";
@@ -14,7 +14,7 @@ const Datalab = () => {
       {/* Hero Section */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between bg-[#FFFFFF] px-6 md:px-16 py-10 rounded-2xl mt-10 gap-6 md:gap-12 lg:gap-16">
         <div className="md:w-1/2 space-y-4 text-center md:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight lora-font">
             Power Your Insights with{" "}
             <span className="text-[#26A37E]">Trusted Data</span>
           </h1>
