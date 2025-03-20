@@ -15,15 +15,18 @@ const partners = [
 
 const PartnersPage = () => {
   return (
-    <div className="container mx-auto w-full flex flex-col items-center p-6 mt-4 space-y-16">
+    <div className="container mx-auto w-full flex flex-col items-center p-6 mt-12 space-y-16">
       {/* Hero Section */}
-      <section className="w-full flex flex-col md:flex-row items-center justify-between bg-[#FFFFFF] px-6 md:px-16 py-10 rounded-2xl gap-6 md:gap-12 lg:gap-16">
+
+      <section className="w-full flex flex-col md:flex-row items-center justify-between bg-[#FFFFFF] px-4 sm:px-6 md:px-16 py-10 rounded-2xl gap-6 md:gap-12 lg:gap-16">
         <div className="md:w-1/2 space-y-4 text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-            Partner With Us to <span className="text-[#26A37E]">Drive Impact</span>
+            Partner With Us to{" "}
+            <span className="text-[#26A37E]">Drive Impact</span>
           </h1>
           <p className="text-base md:text-lg text-gray-600">
-            Together, we can harness the power of data and AI to shape Africa’s future.
+            Together, we can harness the power of data and AI to shape Africa’s
+            future.
           </p>
           <div className="flex justify-center md:justify-start">
             <button className="w-64px h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
@@ -49,32 +52,49 @@ const PartnersPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="w-full min-h-[200px] p-6 rounded-lg flex flex-col items-center text-center">
-            <img src={icon1} alt="Access Exclusive Data" className="w-12 h-12" />
-            <h4 className="text-lg font-semibold mt-4">Access Exclusive Data</h4>
+            <img
+              src={icon1}
+              alt="Access Exclusive Data"
+              className="w-12 h-12"
+            />
+            <h4 className="text-lg font-semibold mt-4">
+              Access Exclusive Data
+            </h4>
             <p className="mt-4">
-              Gain insights from high-quality datasets to drive innovation and decision-making.
+              Gain insights from high-quality datasets to drive innovation and
+              decision-making.
             </p>
           </div>
           <div className="w-full min-h-[200px] p-6 rounded-lg flex flex-col items-center text-center">
-            <img src={icon2} alt="Collaborate on AI Solutions" className="w-12 h-12" />
-            <h4 className="text-lg font-semibold mt-4">Collaborate on AI Solutions</h4>
+            <img
+              src={icon2}
+              alt="Collaborate on AI Solutions"
+              className="w-12 h-12"
+            />
+            <h4 className="text-lg font-semibold mt-4">
+              Collaborate on AI Solutions
+            </h4>
             <p className="mt-4">
-              Work with leading experts to develop AI-driven solutions for real-world challenges.
+              Work with leading experts to develop AI-driven solutions for
+              real-world challenges.
             </p>
           </div>
           <div className="w-full min-h-[200px] p-6 rounded-lg flex flex-col items-center text-center">
             <img src={icon3} alt="Expand Your Reach" className="w-12 h-12" />
             <h4 className="text-lg font-semibold mt-4">Expand Your Reach</h4>
             <p className="mt-4">
-              Connect with a growing network of innovators, researchers, and organizations.
+              Connect with a growing network of innovators, researchers, and
+              organizations.
             </p>
           </div>
         </div>
       </section>
-
-       {/* Partners Section */}
-       <section className="w-full max-w-7xl bg-[#F7FDFA] px-6 py-12 text-center">
-        <h3 className="text-[#26A37E] text-sm font-bold tracking-widest uppercase" style={{ letterSpacing: "0.20em" }}>
+      {/* Partners Section */}
+      <section className="w-full max-w-7xl bg-[#F7FDFA] px-6 py-12 text-center">
+        <h3
+          className="text-[#26A37E] text-sm font-bold tracking-widest uppercase"
+          style={{ letterSpacing: "0.20em" }}
+        >
           Our Partners
         </h3>
         <h1 className="text-3xl lora-font text-[#0F2542] mt-2">

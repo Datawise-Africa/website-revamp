@@ -4,15 +4,15 @@ import Team from "../../components/Team";
 const AboutUs = () => {
   return (
     <div className="container mx-auto">
-      <section className="pt-20 ml-40 mr-40   grid grid-cols-1 md:grid-cols-2 ">
-        <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
+      <section className="pt-20 grid grid-cols-1 md:grid-cols-2 ">
+        <div className=" mt-20 md:pt-20 lg:pt-15 pl-8">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
             Driving Impact Through
             <br />
             <span className="text-[#26A37E]">Data and Innovation</span>
           </h1>
           <p className="sora-font pt-6 pb-6 text-[#0F2542] font-normal text-[22px] leading-[167%] tracking-[-0.02em]">
-            At Datawise Africa, we are committed to solving Africa’s most <br />{" "}
+            At Datawise Africa, we are committed to solving Africa’s most
             pressing challenges by leveraging the power of data, AI, and
             infrastructure.
           </p>
@@ -33,8 +33,7 @@ const AboutUs = () => {
               Mission
             </h2>
             <p className="text-gray-600 mt-2 text-[22px] ">
-              To empower African communities with data-driven solutions that are{" "}
-              <br />
+              To empower African communities with data-driven solutions that are
               ethical, inclusive, and transformative.
             </p>
           </div>
@@ -44,8 +43,7 @@ const AboutUs = () => {
               Vision
             </h2>
             <p className="text-gray-600 mt-2 text-[22px]">
-              To empower African communities with data-driven solutions that are{" "}
-              <br />
+              To empower African communities with data-driven solutions that are
               ethical, inclusive, and transformative.
             </p>
           </div>
@@ -112,8 +110,7 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-
-          <div className="flex items-start gap-4 p-6 w-fit p-20 border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
+          <div className="flex items-start gap-4 p-6 w-fit border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
             <div>
               <svg
                 className="w-8 h-8 text-[#26A37E]"
