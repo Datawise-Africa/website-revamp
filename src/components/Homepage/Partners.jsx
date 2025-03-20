@@ -40,7 +40,7 @@ const Partners = () => {
             researchers, policymakers, businesses, and institutions ready to shape the future together.
           </p>
 
-          <a href="#" className="mt-4 text-left text-base font-semibold leading-relaxed text-md tracking-wide text-white hover:underline flex items-center">
+          <a href="/partners" className="mt-4 text-left text-base font-semibold leading-relaxed text-md tracking-wide text-white hover:underline flex items-center">
             Learn More <span className="ml-2">→</span>
           </a>
 
