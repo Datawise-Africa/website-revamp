@@ -110,7 +110,6 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-
           <div className="flex items-start gap-4 p-6 w-fit border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
             <div>
               <svg
