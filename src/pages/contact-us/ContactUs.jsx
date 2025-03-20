@@ -86,7 +86,7 @@ const ContactUs = () => {
             </p>
             <input
               type="text"
-              placeholder="Placeholder"
+              placeholder="First Name"
               className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
             />
           </div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
             </p>
             <input
               type="text"
-              placeholder="Placeholder"
+              placeholder="Last Name"
               className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
             />
           </div>
@@ -111,7 +111,7 @@ const ContactUs = () => {
           </p>
           <input
             type="email"
-            placeholder="Placeholder"
+            placeholder="Email Address"
             className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
           />
         </div>
@@ -123,7 +123,7 @@ const ContactUs = () => {
           </p>
           <input
             type="text"
-            placeholder="Placeholder"
+            placeholder="Your subject"
             className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
           />
         </div>
@@ -133,7 +133,7 @@ const ContactUs = () => {
           <p className="text-md  text-gray-900 text-[16px] ">Message</p>
           <textarea
             placeholder="Input your message here "
-            className="w-full p-8 border-b-2 border-gray-800 border-outline-none text-sm bg-[#F6F6F6] "
+            className="w-full p-4 border-b-2 border-gray-800 border-outline-none text-sm bg-[#F6F6F6] "
             rows="3"
           />
         </div>
