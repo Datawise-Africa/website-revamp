@@ -1,4 +1,5 @@
 import React from "react";
+import project_hero from "/assets/projects/Projects - Hero.svg"
 import vector1 from "/assets/projects/Vector1.png";
 import vector2 from "/assets/projects/Vector2.png";
 import vector3 from "/assets/projects/Vector3.png";
@@ -38,6 +39,13 @@ const Projects = () => {
               </svg>
             </span>
           </button>
+        </div>
+        <div>
+          <img
+            src={project_hero}
+            alt="Project Hero"
+            className="object-cover w-full h-full"
+          />
         </div>
       </section>
       <section className="pt-4 pb-15">
