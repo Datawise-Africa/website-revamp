@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
             className="w-full max-w-[540px] lg:h-[520px] top-[150.38px]"
-            src="/public/assets/aboutus/aboutus.svg"
+            src="/assets/aboutus/aboutus.svg"
             alt="about us image"
           />
         </div>

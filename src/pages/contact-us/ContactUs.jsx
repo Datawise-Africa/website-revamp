@@ -22,7 +22,7 @@ const ContactUs = () => {
         <div className="md:pt-20 lg:pt-0 ml-34 mb-5 ">
           <img
             className="w-full max-w-[580px] lg:h-[490.69px] top-[135.38px]"
-            src="/public/assets/contactUs/contactUs.svg"
+            src="/assets/contactus/contactUs.svg"
             alt="contact us image"
           />
         </div>
