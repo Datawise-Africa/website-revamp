@@ -5,14 +5,14 @@ import image3 from "/assets/infrastructure.jpg";
 
 const WhatWeDo = () => {
   return (
-    <div className="max-w-6xl mx-auto w-full px-4 py-6 text-[#0F2542]" style={{ fontFamily: 'Sora, sans-serif' }}>
+    <div className="container mx-auto w-full px-4 py-6 text-[#0F2542]" style={{ fontFamily: 'Sora, sans-serif' }}>
       {/* Small Heading */}
       <h3 className="text-lg font-semibold text-[#26A37E] text-center uppercase tracking-wide mb-2 ">
         WHAT WE DO
       </h3>
 
       {/* Big Heading */}
-      <h2 className="text-3xl font-bold text-center mt-1 mb-2 ">
+      <h2 className="text-3xl font-lora  font-bold text-center mt-1 mb-2 ">
         Solving Real Problems With Data and AI
       </h2>
 
@@ -46,7 +46,7 @@ const WhatWeDo = () => {
             className="w-1/2 h-auto object-cover  "
           />
           <div className="flex-1 text-center lg:text-left px-2">
-            <h4 className="text-xl text-[#129FC8] font-semibold mb-2 ">Artificial Intelligence</h4>
+            <h4 className="text-xl text-[#129FC8] font-semibold mb-2 font-lora">Artificial Intelligence</h4>
             <p className="text-base mt-1">
               We create AI models designed for African communities. Think recommender systems, computer vision, and language models that solve specific, local problems.
             </p>

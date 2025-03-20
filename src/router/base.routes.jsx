@@ -3,6 +3,10 @@ import Projects from "../pages/projects/Projects";
 import Datalab from "../pages/datalab/Datalab";
 import AboutUs from "../pages/about-us/AboutUs";
 import ContactUs from "../pages/contact-us/ContactUs";
+import Jobs from "../pages/jobs/Jobs";
+import Partners from "../pages/partners/Partners";
+import PartnerForm from "../pages/partners/partnersform";
+
 
 const baseRoutes = [
     {
@@ -24,6 +28,18 @@ const baseRoutes = [
     {
         path: "/contact-us",
         element: <ContactUs />,
+    },
+    {
+        path: "jobs",
+        element: <Jobs />,
+    },
+    {
+        path: "/become-a-partner",
+        element: <PartnerForm/>
+    },
+    {
+        path: "/partners",
+        element: <Partners />,
     },
 
 ]
