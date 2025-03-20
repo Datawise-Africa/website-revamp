@@ -1,11 +1,11 @@
 import React from "react";
-import jobs from "/assets/jobs/cuate.png";
 import whyus1 from "/assets/jobs/lucide_goal.png";
 import whyus2 from "/assets/jobs/hugeicons_ai-magic.png";
 import whyus3 from "/assets/jobs/fluent_people-community-24-regular.png";
 import ourvalues1 from "/assets/jobs/Integrity.png";
 import ourvalues2 from "/assets/jobs/Collaboration.png";
 import ourvalues3 from "/assets/jobs/Innovation.png";
+import jobs_hero from "/assets/jobs/Jobs Hero.svg"
 
 const Jobs = () => {
   return (
@@ -46,7 +46,7 @@ const Jobs = () => {
         <div className="md:pt-20 lg:pt-0 ">
           <img
             className="w-full max-w-[845px] lg:h-[400.69px] top-[135.38px]"
-            src={jobs}
+            src={jobs_hero}
             alt="jobs"
           />
         </div>

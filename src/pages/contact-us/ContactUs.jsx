@@ -77,7 +77,7 @@ const ContactUs = () => {
       </div>
 
       {/* Right Section - Contact Form */}
-      <div className="bg-white  ml-12 md:p-8 rounded shadow-lg w-800px md:w-[600px] min-h-[660px] mb-8 ">
+      <div className="bg-white  ml-12 md:p-8 rounded shadow-lg w-800px md:w-[600px] min-h-[60px] mb-8 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
           {/* First Name */}
           <div >
