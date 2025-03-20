@@ -16,7 +16,7 @@ const ContactUs = () => {
           <p className="sora-font ml-2 pt-6 pb-6 text-gray-600 font-normal text-[22px] leading-[167%] tracking-[-0.02em]">
             Have any questions, need support, or just want to learn more about
             Datawise Africa ?
-            Reach out we'd love to hear from you.
+            Reach out we'd love to hear from you
           </p>
         </div>
         <div className="md:pt-20 lg:pt-0 ml-34 mb-5 ">
