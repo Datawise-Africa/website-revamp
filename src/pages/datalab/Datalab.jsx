@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "/assets/datalab-hero.png";
+import image1 from "/assets/Datalab Hero.svg";
 import icon1 from "/assets/datalab1.png";
 import icon2 from "/assets/datalab2.png";
 import icon3 from "/assets/datalab3.png";
