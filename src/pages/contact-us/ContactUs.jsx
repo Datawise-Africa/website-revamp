@@ -5,8 +5,8 @@ import ContactForm from "../../components/ContactUs/ContactCard";
 
 const ContactUs = () => {
   return (
-    <div className="min-h-screen bg-white ">
-      <section className="pt-40 ml-36 mr-40   grid grid-cols-1 md:grid-cols-2 ">
+    <div className="container mx-auto w-full flex flex-col items-center p-6">
+      <section className="pt-40 ml-10 mr-10   grid grid-cols-1 md:grid-cols-2 ">
         <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
             We're Here to
@@ -29,8 +29,8 @@ const ContactUs = () => {
       </section>
 
       {/* Left Section - Contact Information */}
-      <div className="flex flex-col md:flex-row justify-center items-center min-h-[800px] bg-[#F7FDFA] px-6 md:px-12">
-      <div className="bg-[#D1F2E5]  md:p-8 rounded-lg shadow-lg w-full md:w-[400px] h-[600px] h-auto mb-8 ">
+      <div className=" flex flex-col md:flex-row justify-center items-center min-h-[800px] bg-[#F7FDFA] px-6 md:px-12">
+      <div className="bg-[#D1F2E5] md:p-8 rounded-lg shadow-lg w-full md:w-[580px] h-[600px] h-auto mb-8 ">
         <h2 className="text-lg font-semibold text-[22px] text-gray-900 mt-2">
           Contact Information
         </h2>

@@ -3,8 +3,8 @@ import Team from "../../components/Team";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto">
-      <section className="pt-20 ml-40 mr-40   grid grid-cols-1 md:grid-cols-2 ">
+    <div className="container mx-auto w-full flex flex-col items-center p-6 space-y-4">
+      <section className="pt-20  mr-5  grid grid-cols-1 md:grid-cols-2 ">
         <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
             Driving Impact Through
@@ -19,7 +19,7 @@ const AboutUs = () => {
         </div>
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
-            className="w-full max-w-[600px] lg:h-[550.69px] top-[135.38px]"
+            className="w-full max-w-[540px] lg:h-[520px] top-[150.38px]"
             src="/public/assets/aboutus/aboutus.svg"
             alt="about us image"
           />
@@ -27,7 +27,7 @@ const AboutUs = () => {
       </section>
 
       <section>
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56 pt-2">
           <div className="w-full md:w-1/2 text-center mt-5 border-r md:border-gray-200">
             <h2 className="text-4xl font-bold text-gray-900 lora-font">
               Mission
@@ -162,7 +162,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <Team/>
+      <Team />
 
       <div className="mt-8 mb-20 bg-[#26A37E] text-white  md:p-6 w-[1100px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
         <div className="md:w-1/2 ml-14 ">
