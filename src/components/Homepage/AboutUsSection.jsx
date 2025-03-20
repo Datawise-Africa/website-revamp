@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="w-full bg-[#F7FDFA] flex justify-center items-center py-6">
+    <div className="container mx-auto w-full bg-[#F7FDFA] flex justify-center items-center py-6">
       <div
         className="w-full bg-[#F7FDFA] p-6  text-left lg:text-center font-sans px-4 lg:px-12"
         style={{ fontFamily: "Sora, sans-serif" }}
@@ -17,7 +17,7 @@ const AboutUs = () => {
           At Datawise Africa, research is at our core. We explore the
           intersections of data, AI, and infrastructure, building solutions
           tailored for Africa’s needs but with a global perspective.
-        </p>
+        </p> 
 
         <a
           href="#"
