@@ -3,9 +3,9 @@ import Team from "../../components/Team";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto">
-      <section className="pt-20 grid grid-cols-1 md:grid-cols-2 ">
-        <div className=" mt-20 md:pt-20 lg:pt-15 pl-8">
+    <div className="container mx-auto w-full flex flex-col items-center p-6 space-y-4">
+      <section className="pt-20  mr-5  grid grid-cols-1 md:grid-cols-2 ">
+        <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
           <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
             Driving Impact Through
             <br />
@@ -19,15 +19,15 @@ const AboutUs = () => {
         </div>
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
-            className="w-full max-w-[550px] lg:h-[490.69px] top-[135.38px]"
-            src="/public/assets/aboutus/cuate.png"
+            className="w-full max-w-[540px] lg:h-[520px] top-[150.38px]"
+            src="/public/assets/aboutus/aboutus.svg"
             alt="about us image"
           />
         </div>
       </section>
 
       <section>
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56 pt-2">
           <div className="w-full md:w-1/2 text-center mt-5 border-r md:border-gray-200">
             <h2 className="text-4xl font-bold text-gray-900 lora-font">
               Mission
@@ -110,7 +110,6 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-
           <div className="flex items-start gap-4 p-6 w-fit border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
             <div>
               <svg
@@ -160,22 +159,22 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <Team/>
+      <Team />
 
-      <div className="mt-8 mb-20 bg-[#26A37E] text-white  md:p-6 w-[1000px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
+      <div className="mt-8 mb-20 bg-[#26A37E] text-white  md:p-6 w-[1100px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
         <div className="md:w-1/2 ml-14 ">
-          <h3 className="text-5xl font-bold lora-font text-left ">
+          <h3 className="text-4xl font-bold lora-font text-left ">
             Want to be part <br /> of our mission ?
           </h3>
 
-          <p className="mt-4 text-base text-[20px] font-extralight leading-relaxed tracking-wide text-left">
+          <p className="mt-4 text-base text-[18px] font-extralight leading-relaxed tracking-wide text-left">
             We're always looking for talented <br /> individuals to join our
             team
           </p>
           <p>
             <a
-              href="#"
-              className="mt-4  text-[20px] text-left  leading-relaxed  tracking-wide text-white hover:underline flex items-center"
+              href=""
+              className="mt-4  text-[14px] text-left  leading-relaxed  tracking-wide text-white hover:underline flex items-center"
             >
               View Open Roles <span className="ml-2">→</span>
             </a>
@@ -183,9 +182,9 @@ const AboutUs = () => {
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0 md:ml-8">
           <img
-            src="/assets/homepage/cuate.png"
+            src="/assets/aboutus/ctajoin.svg"
             alt="Collaboration"
-            className="w-full max-w-sm mt-5 mx-auto"
+            className="w-full max-w-2xl mt-5 mx-auto"
           />
         </div>
       </div>
