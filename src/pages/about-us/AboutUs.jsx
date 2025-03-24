@@ -19,7 +19,7 @@ const AboutUs = () => {
         </div>
         <div className="md:pt-20 lg:pt-0 ml-40 mb-5 ">
           <img
-            className="w-full max-w-[540px] lg:h-[520px] top-[150.38px]"
+            className="w-full max-w-[540px] lg:h-[500px] top-[150.38px]"
             src="/assets/aboutus/aboutus.svg"
             alt="about us image"
           />
@@ -27,25 +27,27 @@ const AboutUs = () => {
       </section>
 
       <section>
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56 pt-2">
-          <div className="w-full md:w-1/2 text-center mt-5 border-r md:border-gray-200">
+        <div className="flex flex-col md:flex-row justify-center w-screen items-center md:items-start  md:gap-12 p-8 bg-[#F7FDFA] h-56 pt-2 ">
+          <div className="w-full md:w-1/2 text-center  border-r md:border-gray-200 mt-10">
             <h2 className="text-4xl font-bold text-gray-900 lora-font">
               Mission
             </h2>
-            <p className="text-gray-600 mt-2 text-[22px] ">
-              To empower African communities with data-driven solutions that are
-              ethical, inclusive, and transformative.
+            <p className="text-gray-600 mt-2  text-[20px]">
+              To create data and AI systems that</p> <p className="text-gray-600 text-[20px]"> people trust and use to build
+              their world.
             </p>
           </div>
 
-          <div className="w-full md:w-1/2 text-center mt-5">
+          <div className="w-full md:w-1/2 text-center mt-5 mt-10">
             <h2 className="text-4xl font-bold text-gray-900 lora-font">
               Vision
             </h2>
-            <p className="text-gray-600 mt-2 text-[22px]">
-              To empower African communities with data-driven solutions that are
-              ethical, inclusive, and transformative.
-            </p>
+            <p className="text-gray-600 mt-2 text-[20px]">
+              To build the tools and systems that </p>
+               <p className="text-gray-600 mt-2 text-[20px]">
+               help us shape the future we
+              believe in. </p> 
+          
           </div>
         </div>
       </section>
@@ -110,7 +112,8 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-4 p-6 w-fit border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
+          
+          <div className="flex items-start gap-4 w-full  p-20 border border-[#26A37E] rounded-xl bg-[#F7FDFA] shadow-sm">
             <div>
               <svg
                 className="w-8 h-8 text-[#26A37E]"
