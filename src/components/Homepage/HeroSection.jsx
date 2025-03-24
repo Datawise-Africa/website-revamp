@@ -22,7 +22,7 @@ const slides = [
   },
   {
     title: "We are",
-    highlight: "Community-Led",
+    highlight: "Community-Centric",
     description:
       "Our work is driven by the needs of African communities, ensuring that our research and innovations serve real people in meaningful ways.",
     image: "/assets/homepage/pinkrafiki.svg",
