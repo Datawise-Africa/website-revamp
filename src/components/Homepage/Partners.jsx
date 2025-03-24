@@ -9,8 +9,8 @@ const partners = [
 
 const Partners = () => {
   return (
-    <div className="container mx-auto bg-white py-12 px-6 text-center">
-        <div className="bg-[#F7FDFA] px-6 py-12 text-center">
+    <div className="container bg-white py-12 text-center">
+        <div className="bg-[#F7FDFA] w-screen py-12 text-center">
     <h3 className="text-[#26A37E] text-sm font- tracking-widest uppercase" style={{ letterSpacing: "0.20em" }}>
         Our Partners
       </h3>
@@ -29,18 +29,24 @@ const Partners = () => {
       </div>
       </div>
 
-      {/* Partner With Us Section */}
-      <div className="mt-8 bg-[#26A37E] text-white  md:p-6 w-[1200px] h-[450px] mx-auto md:flex md:items-center rounded-2xl">
+      
+      <div className="mt-8 ml-54 bg-[#26A37E] text-white  md:p-6 w-[1510px] h-[500px] mx-auto md:flex md:items-center rounded-2xl items-center justify-center ">
 
         <div className="md:w-1/2 ml-14 ">
-          <h3 className="text-4xl font-bold lora-font text-left ">Partner With Us</h3>
+          <h3 className="text-[40px] font-bold lora-font text-left ">Partner With Us</h3>
 
-          <p className="mt-2  text-base font-extralight leading-relaxed tracking-wide text-left">
-            Are you looking to drive impact with data and AI in Africa? We are open to collaborations with
-            researchers, policymakers, businesses, and institutions ready to shape the future together.
+          <p className="mt-2 font-extralight leading-relaxed tracking-wide text-left text-[20px]">
+            Are you looking to drive impact with data and AI in Africa?
+          </p>
+          <p className="mt-2 font-extralight leading-relaxed tracking-wide text-left text-[20px]">
+          We are open to collaborations with
+          researchers, policymakers,
+          </p>
+          <p className="mt-2 font-extralight leading-relaxed tracking-wide text-left text-[20px]">
+          businesses, and institutions ready to shape the future together.
           </p>
 
-          <a href="/partners" className="mt-4 text-left text-base font-semibold leading-relaxed text-md tracking-wide text-white hover:underline flex items-center">
+          <a href="/partners" className="mt-4 text-left text-[18px] font-semibold leading-relaxed text-md tracking-wide text-white hover:underline flex items-center">
             Learn More <span className="ml-2">→</span>
           </a>
 
