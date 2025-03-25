@@ -2,9 +2,6 @@ import React from "react";
 import whyus1 from "/assets/jobs/lucide_goal.png";
 import whyus2 from "/assets/jobs/hugeicons_ai-magic.png";
 import whyus3 from "/assets/jobs/fluent_people-community-24-regular.png";
-import ourvalues1 from "/assets/jobs/Integrity.png";
-import ourvalues2 from "/assets/jobs/Collaboration.png";
-import ourvalues3 from "/assets/jobs/Innovation.png";
 import jobs_hero from "/assets/jobs/Jobs Hero.svg"
 
 const Jobs = () => {
@@ -113,68 +110,6 @@ const Jobs = () => {
               <p className="sora-font text-[#0F2542] pt-2 text-left">
                 We foster a collaborative environment, offering opportunities to
                 work with experts across diverse fields and impactful projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="pt-4 pb-15">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="flex items-center justify-center">
-            <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center">
-              Our Values
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 pt-5 gap-5">
-            <div className="p-3">
-              <div className="flex items-center justify-center">
-                <img
-                  src={ourvalues1}
-                  alt="Group 1"
-                  width={64}
-                  height={64}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-center text-[#0F2542] pt-2">
-                Integrity
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-center">
-                We prioritize ethical data practices and transparency
-              </p>
-            </div>
-            <div className="p-3">
-              <div className="flex items-center justify-center">
-                <img
-                  src={ourvalues2}
-                  alt="Group 2"
-                  width={64}
-                  height={64}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-center text-[#0F2542] pt-2">
-                Collaboration
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-center">
-                We believe in the power of teamwork and diverse perspectives
-              </p>
-            </div>
-            <div className="p-3">
-              <div className="flex items-center justify-center">
-                <img
-                  src={ourvalues3}
-                  alt="Group 3"
-                  width={40}
-                  height={40}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-center text-[#0F2542] pt-2">
-                Innovation
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-center">
-                We constantly push boundaries to find creative solutions
               </p>
             </div>
           </div>

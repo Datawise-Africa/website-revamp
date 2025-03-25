@@ -1,33 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { teamMembers } from "../constants";
 
 const Team = () => {
-  const teamMembers = [
-    {
-      name: "Dr. Albert Kahira",
-      role: "Director",
-      image: "/assets/teamMembers/albert-kahira.jpeg", // Replace with actual image paths
-    },
-    {
-      name: "Brian Odhiambo",
-      role: "Data Scientist",
-      image: "/assets/teamMembers/brian.jpg",
-    },
-    {
-      name: "Dorothy Chepkonga",
-      role: "Operations Lead",
-      image: "/assets/teamMembers/dorothy.jpg",
-    },
-    {
-      name: "Virginia Wanjiru",
-      role: "Software Engineer",
-      image: "/assets/teamMembers/virginia.jpg",
-    },
-    {
-      name: "Winny Chelangat",
-      role: "Software Engineer",
-      image: "/assets/teamMembers/winny.jpg",
-    },
-  ];
 
   return (
     <div className="bg-white py-2 px-6">
@@ -42,7 +18,7 @@ const Team = () => {
           A diverse team of researchers, engineers,<br/> and innovators united by a shared vision.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {teamMembers.map((member, index) => (
           <div key={index} className="flex flex-col items-center">
             <img
@@ -50,8 +26,11 @@ const Team = () => {
               alt={member.name}
               className="w-80 h-80  object-cover mb-4 shadow-md"
             />
+            <a href={member.linkedin_url} target="_blank" rel="nooponer noreferrer" className="text-[#0A66C2] mb-2">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
             <h3 className="text-xl font-medium text-gray-800">{member.name}</h3>
-            <p className="text-[#26A37E] font-extralight">{member.role}</p>
+            <p className="text-[#26A37E] font-extralight">{member.title}</p>
           </div>
         ))}
       </div>
