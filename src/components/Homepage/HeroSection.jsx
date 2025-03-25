@@ -61,7 +61,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
   return (
-    <div className="container mx-auto relative w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
+    <div className="container mx-auto lg:relative lg:w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -69,25 +69,30 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="min-w-full flex justify-center items-center hero-slide"
+            className="min-w-full flex flex-col lg:flex-row justify-center items-center hero-slide px-4"
           >
-            <div className="hero-slide-content flex flex-col md:flex-row items-center">
-              <div className="text-section max-w-lg text-center md:text-left">
-                <h1 className="text-7xl lora-font font-size-64px text-gray-900">
-                  {slide.title}{" "}
-                  <span className={`block ${slide.highlightColor}`}>
-                    {slide.highlight}
-                  </span>
+            <div className="hero-slide-content flex flex-col items-center lg:flex-row lg:items-center">
+              {/* Text Section */}
+              <div className="text-section max-w-lg text-center lg:text-left">
+                <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-7xl lora-font text-gray-900">
+                  {slide.title}
                 </h1>
-                <p className="mt-4 text-3xl text-gray-700">
+                <span
+                  className={`block text-xl sm:text-2xl md:text-3xl lg:text-5xl mt-2 ${slide.highlightColor}`}
+                >
+                  {slide.highlight}
+                </span>
+                <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700">
                   {slide.description}
                 </p>
               </div>
-              <div className="image-section md:mt-0 md:ml-12">
+
+              {/* Image Section */}
+              <div className="image-section mt-6 md:mt-8 lg:mt-0 lg:ml-12 w-full lg:w-auto">
                 <img
                   src={slide.image}
                   alt={slide.highlight}
-                  className={slide.imageClass}
+                  className={`w-10/12 sm:w-8/12 md:w-6/12 lg:w-auto ${slide.imageClass}`}
                 />
               </div>
             </div>

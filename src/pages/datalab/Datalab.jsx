@@ -6,7 +6,7 @@ import icon3 from "/assets/datalab3.png";
 import icon4 from "/assets/datalab4.png";
 import icon5 from "/assets/datalab5.png";
 import icon6 from "/assets/datalab6.png";
-import icon7 from "/assets/datalab7.png"; 
+import icon7 from "/assets/datalab7.png";
 const handleExploreDatasetsClick = () => {
   window.open(
     "http://datalab.datawiseafrica.com",
@@ -31,8 +31,9 @@ const Datalab = () => {
           </p>
           <div className="flex justify-center md:justify-start">
             <button
-            onClick={handleExploreDatasetsClick} 
-            className="w-[164px] h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg">
+              onClick={handleExploreDatasetsClick}
+              className="w-[164px] h-[41px] px-4 py-3 flex items-center gap-2 bg-[#26A37E] text-white font-medium rounded-lg"
+            >
               Get Started
               <img src={icon7} alt="Arrow Icon" className="w-5 h-5" />
             </button>
@@ -55,9 +56,8 @@ const Datalab = () => {
             <span className="text-[#26A37E]">Datalab</span>
           </h2>
           <p className="font-sora font-normal text-[22px] leading-[167%] tracking-[-0.03em] text-gray-600">
-  Your gateway to Africa’s most comprehensive data platform.
-</p>
-
+            Your gateway to Africa’s most comprehensive data platform.
+          </p>
         </div>
         <div className="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-6 md:mt-0">
           <div className="border border-[#EDFCFE] p-6 rounded-md shadow bg-[#EDFCFE] flex flex-col items-start">
@@ -87,50 +87,65 @@ const Datalab = () => {
         </div>
       </section>
 
-           {/* Final Section */}
-           <section className="w-full text-center bg-[#F7FDFA] space-y-6 px-6">
-  <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center text-[#0F2542]">
-    Empower Your Work with DataLab
-  </h2>
-  <p className="font-sora font-normal text-[22px] leading-[167%] tracking-[-0.03em] text-center text-[#4B5563]">
-    We offer a comprehensive catalog of high-quality datasets that empower you to:
-  </p>
+      {/* Final Section */}
+      <section className="w-full text-center bg-[#F7FDFA] space-y-6 px-6">
+        <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center text-[#0F2542]">
+          Empower Your Work with DataLab
+        </h2>
+        <p className="font-sora font-normal text-[22px] leading-[167%] tracking-[-0.03em] text-center text-[#4B5563]">
+          We offer a comprehensive catalog of high-quality datasets that empower
+          you to:
+        </p>
 
-  {/* Grid Section */}
-  <div className="max-w-[2000px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
-      <img src={icon4} alt="Make Smarter Decisions" className="w-12 h-12" />
-      <h4 className="text-lg font-semibold mt-4">Make Smarter Decisions</h4>
-      <p className="mt-4">
-        Use data-driven insights to enhance your projects, research, or business strategies.
-      </p>
-    </div>
-    <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
-      <img src={icon5} alt="Access Trusted Data" className="w-12 h-12" />
-      <h4 className="text-lg font-semibold mt-4">Access Trusted Data</h4>
-      <p className="mt-4">
-        Access curated, high-quality datasets from leading sources across industries.
-      </p>
-    </div>
-    <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
-      <img src={icon6} alt="Customizable Downloads" className="w-12 h-12" />
-      <h4 className="text-lg font-semibold mt-4">Customizable Downloads</h4>
-      <p className="mt-4">
-        Tailor your data to focus on the metrics and information that matter most.
-      </p>
-    </div>
-  </div>
+        {/* Grid Section */}
+        <div className="max-w-[2000px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
+            <img
+              src={icon4}
+              alt="Make Smarter Decisions"
+              className="w-12 h-12"
+            />
+            <h4 className="text-lg font-semibold mt-4">
+              Make Smarter Decisions
+            </h4>
+            <p className="mt-4">
+              Use data-driven insights to enhance your projects, research, or
+              business strategies.
+            </p>
+          </div>
+          <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
+            <img src={icon5} alt="Access Trusted Data" className="w-12 h-12" />
+            <h4 className="text-lg font-semibold mt-4">Access Trusted Data</h4>
+            <p className="mt-4">
+              Access curated, high-quality datasets from leading sources across
+              industries.
+            </p>
+          </div>
+          <div className="w-full min-h-[180px] p-6 rounded-lg flex flex-col items-center text-center">
+            <img
+              src={icon6}
+              alt="Customizable Downloads"
+              className="w-12 h-12"
+            />
+            <h4 className="text-lg font-semibold mt-4">
+              Customizable Downloads
+            </h4>
+            <p className="mt-4">
+              Tailor your data to focus on the metrics and information that
+              matter most.
+            </p>
+          </div>
+        </div>
 
-  {/* Button */}
-  <button 
-  onClick={handleExploreDatasetsClick}
-  className="px-6 py-3 flex items-center gap-2 bg-[#26A37E] mx-auto text-white font-medium rounded-lg">
-    Explore Datasets
-    <img src={icon7} alt="Arrow Icon" className="w-5 h-5" />
-  </button>
-</section>
-
-
+        {/* Button */}
+        <button
+          onClick={handleExploreDatasetsClick}
+          className="px-6 py-3 flex items-center gap-2 bg-[#26A37E] mx-auto text-white font-medium rounded-lg"
+        >
+          Explore Datasets
+          <img src={icon7} alt="Arrow Icon" className="w-5 h-5" />
+        </button>
+      </section>
     </div>
   );
 };
