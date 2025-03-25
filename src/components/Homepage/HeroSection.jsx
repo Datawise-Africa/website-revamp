@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+/* eslint-disable no-unused-vars */
+import { motion, AnimatePresence } from "framer-motion"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
@@ -6,9 +8,8 @@ const slides = [
     title: "We are",
     highlight: "Data-Informed",
     description:
-      "High-quality, ethical data is  the foundation of progress. We collect, curate, and analyze datasets that empower decision-makers across Africa.",
+      "High-quality, ethical data is the foundation of progress. We collect, curate, and analyze datasets that empower decision-makers across Africa.",
     image: "/assets/homepage/greenrafiki.svg",
-    imageClass: "w-400 h-120 ",
     highlightColor: "text-[#26A37E]",
   },
   {
@@ -17,7 +18,6 @@ const slides = [
     description:
       "From Infrastructure to AI, we are pioneering the digital backbone of an Africa that leads in data and innovation.",
     image: "/assets/homepage/pana.svg",
-    imageClass: "w-160 h-120  ",
     highlightColor: "text-[#DD8823]",
   },
   {
@@ -26,105 +26,155 @@ const slides = [
     description:
       "Our work is driven by the needs of African communities, ensuring that our research and innovations serve real people in meaningful ways.",
     image: "/assets/homepage/pinkrafiki.svg",
-    imageClass: "w-380 h-120 ",
     highlightColor: "text-[#EE3481]",
   },
   {
     title: "We are",
     highlight: "AI-Powered",
     description:
-      "AI has the potential to reshape Africa’s future. We develop ethical, community-focused AI solutions tailored to local needs.",
+      "AI has the potential to reshape Africa's future. We develop ethical, community-focused AI solutions tailored to local needs.",
     image: "/assets/homepage/bluerafiki.svg",
-    imageClass: "w-400 h-140 ",
     highlightColor: "text-[#1FB5DD]",
   },
-];
+]
+
+const variants = {
+  enter: (direction) => {
+    return {
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    }
+  },
+  center: {
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction) => {
+    return {
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    }
+  },
+}
 
 const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [direction, setDirection] = useState(0)
 
   // Move to the previous slide
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
+    setDirection(-1)
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
+  }
 
   // Move to the next slide
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
+    setDirection(1)
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
+  }
+
+  // Go to a specific slide
+  const goToSlide = (index) => {
+    setDirection(index > currentIndex ? 1 : -1)
+    setCurrentIndex(index)
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
-    }, 10000);
+      nextSlide()
+    }, 10000)
 
-    return () => clearInterval(interval);
-  }, [currentIndex]);
+    return () => clearInterval(interval)
+  }, [currentIndex])
+
   return (
-    <div className="container mx-auto lg:relative lg:w-full h-screen px-16 pt-0 overflow-hidden hero-slider-container">
-      <div
-        className="flex transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="min-w-full flex flex-col lg:flex-row justify-center items-center hero-slide px-4"
-          >
-            <div className="hero-slide-content flex flex-col items-center lg:flex-row lg:items-center">
+    <div className="relative w-full min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[600px] overflow-hidden">
+      <AnimatePresence initial={false} custom={direction} mode="wait">
+        <motion.div
+          key={currentIndex}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.2 },
+          }}
+          className="absolute inset-0 w-full h-full"
+        >
+          <div className="container mx-auto h-full px-4 sm:px-6 md:px-8 lg:px-16 py-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between h-full gap-8 lg:gap-12">
               {/* Text Section */}
-              <div className="text-section max-w-lg text-center lg:text-left">
-                <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-7xl lora-font text-gray-900">
-                  {slide.title}
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-900">
+                  {slides[currentIndex].title}
                 </h1>
                 <span
-                  className={`block text-xl sm:text-2xl md:text-3xl lg:text-5xl mt-2 ${slide.highlightColor}`}
+                  className={`block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 font-serif ${slides[currentIndex].highlightColor}`}
                 >
-                  {slide.highlight}
+                  {slides[currentIndex].highlight}
                 </span>
-                <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700">
-                  {slide.description}
+                <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-xl mx-auto lg:mx-0">
+                  {slides[currentIndex].description}
                 </p>
               </div>
 
               {/* Image Section */}
-              <div className="image-section mt-6 md:mt-8 lg:mt-0 lg:ml-12 w-full lg:w-auto">
-                <img
-                  src={slide.image}
-                  alt={slide.highlight}
-                  className={`w-10/12 sm:w-8/12 md:w-6/12 lg:w-auto ${slide.imageClass}`}
+              <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                <motion.img
+                  src={slides[currentIndex].image}
+                  alt={slides[currentIndex].highlight}
+                  className="w-[70%] sm:w-[60%] md:w-[50%] lg:w-[80%] h-auto object-contain"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.4 }}
                 />
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        </motion.div>
+      </AnimatePresence>
 
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute p-8  top-1/2 left-4 transform -translate-y-1/2 "
+        className="absolute top-1/2 left-2 sm:left-4 md:left-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 sm:p-3 md:p-4 shadow-md z-10 transition-all duration-200"
+        aria-label="Previous slide"
       >
-        <FaChevronLeft className="text-gray-600 text-5xl" />
+        <FaChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-700" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute p-8  top-1/2 right-4 transform -translate-y-1/2"
+        className="absolute top-1/2 right-2 sm:right-4 md:right-6 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 sm:p-3 md:p-4 shadow-md z-10 transition-all duration-200"
+        aria-label="Next slide"
       >
-        <FaChevronRight className="text-gray-600 text-5xl" />
+        <FaChevronRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-700" />
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute px-24 flex space-x-3 custom-dots-container">
+      <div className="absolute bottom-6 sm:bottom-8 md:bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2 sm:space-x-3 z-10">
         {slides.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`custom-dot ${index === currentIndex ? "active" : ""}`}
-          />
+            onClick={() => goToSlide(index)}
+            className="focus:outline-none"
+            aria-label={`Go to slide ${index + 1}`}
+          >
+            <motion.div
+              className={`w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full ${
+                index === currentIndex ? "bg-gray-800" : "bg-gray-400 hover:bg-gray-600"
+              }`}
+              initial={false}
+              animate={index === currentIndex ? { scale: 1.2, opacity: 1 } : { scale: 1, opacity: 0.7 }}
+              transition={{ duration: 0.2 }}
+            />
+          </button>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
+
