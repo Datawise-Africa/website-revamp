@@ -79,7 +79,7 @@ const AboutUs = () => {
       <Team />
 
       {/* CTA Section */}
-      <div className="bg-[#26A37E] text-white p-8 rounded-2xl max-w-4xl w-full mx-auto text-center md:text-left md:flex md:items-center">
+      <div className="bg-[#26A37E] text-white p-8 rounded-2xl w-full mx-auto text-center md:text-left md:flex md:items-center">
         <div className="md:w-1/2">
           <h3 className="text-3xl font-bold">Want to be part of our mission?</h3>
           <p className="mt-4 text-lg font-light">
