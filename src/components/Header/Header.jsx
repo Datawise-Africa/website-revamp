@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import datawise_logo from "/assets/datawise-logo-dark.png";
+// import datawise_logo from "/assets/datawise-logo-dark.png";
 import dwise_logo from "/assets/datawise-logo-icon-dark.svg";
 import { navigation } from "../../constants";
 
