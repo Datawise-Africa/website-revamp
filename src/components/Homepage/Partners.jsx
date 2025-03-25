@@ -29,8 +29,8 @@ const Partners = () => {
       </div>
       </div>
 
-      
       <div className="mt-8 ml-54 bg-[#26A37E] text-white  md:p-6 lg:w-[1510px] lg:h-[500px] mx-auto md:flex md:items-center rounded-2xl items-center justify-center ">
+
 
         <div className="md:w-1/2 ml-14 ">
           <h3 className="text-[40px] font-bold lora-font text-left ">Partner With Us</h3>
