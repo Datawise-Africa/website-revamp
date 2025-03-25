@@ -25,6 +25,7 @@ const AboutUs = () => {
         <div className="flex justify-center">
           <img
             className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl"
+
             src="/assets/aboutus/aboutus.svg"
             alt="About Us"
           />
@@ -47,6 +48,7 @@ const AboutUs = () => {
               To build the tools and systems that help us shape the future we
               believe in.
             </p>
+
           </div>
         </div>
       </section>
@@ -72,6 +74,7 @@ const AboutUs = () => {
               </p>
             </div>
           ))}
+
         </div>
       </section>
 
