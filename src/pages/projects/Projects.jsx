@@ -18,8 +18,8 @@ const Projects = () => {
             <span className="text-[#26A37E]"> Data Research</span>
           </h1>
           <p className="text-gray-800 mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
-            Our research initiatives focus on solving Africa's most pressing challenges, from climate resilience to
-            economic development.
+            Our research initiatives focus on solving Africa's most pressing
+            challenges, from climate resilience to economic development.
           </p>
           <div className="mt-6 flex justify-center md:justify-start">
             <button
@@ -36,7 +36,11 @@ const Projects = () => {
                 stroke="currentColor"
                 className="w-5 h-5 ml-1"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
               </svg>
             </button>
           </div>
@@ -52,31 +56,48 @@ const Projects = () => {
 
       {/* Focus Areas Section */}
       <section className="text-center mt-12">
-        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">Focus Areas</h2>
+        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">
+          Focus Areas
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {[
             {
               img: "/assets/projects/Vector1.png",
               title: "AI for Development",
               desc: "Leveraging AI to address social and economic challenges",
+              bg: "bg-sky-50 border-sky-200",
             },
             {
               img: "/assets/projects/Vector2.png",
               title: "Data Infrastructure",
               desc: "Building sustainable and affordable compute solutions",
+              bg: "bg-pink-50 border-pink-200",
             },
             {
               img: "/assets/projects/Vector3.png",
               title: "Ethical Data Practices",
               desc: "Ensuring data collection and usage are transparent and ethical",
+              bg: "bg-green-50 border-green-200",
             },
           ].map((item, index) => (
-            <div key={index} className="p-5 sm:p-6 border rounded-md shadow-sm bg-white">
+            <div
+              key={index}
+              className={`p-5 sm:p-6 border rounded-md shadow-sm ${item.bg}`}
+            >
               <div className="flex justify-center">
-                <img src={item.img || "/placeholder.svg"} alt={item.title} width={64} height={64} />
+                <img
+                  src={item.img || "/placeholder.svg"}
+                  alt={item.title}
+                  width={64}
+                  height={64}
+                />
               </div>
-              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">{item.title}</h3>
-              <p className="text-gray-700 mt-2 text-sm sm:text-base">{item.desc}</p>
+              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">
+                {item.title}
+              </h3>
+              <p className="text-gray-700 mt-2 text-sm sm:text-base">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -84,38 +105,51 @@ const Projects = () => {
 
       {/* Featured Projects Section */}
       <section className="text-center mt-12">
-        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">Featured Projects</h2>
+        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">
+          Featured Projects
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {[
             {
               img: "/assets/projects/Vector2.png",
-              title: "AI for Healthcare Access",
-              desc: "Improved diagnostic accuracy and reduced costs for rural clinics",
+              title: "Datalab",
+              desc: "Datalab is a platform that maintains transparency in data use while ensuring creator sovereignty.It enable users discover datasets, upload datasets, and collaborate with others.",
             },
             {
               img: "/assets/projects/Vector2.png",
-              title: "AI for Financial Inclusion",
-              desc: "Developing AI models to expand financial access",
+              title: "Eduken",
+              desc: "Eduken catalogs Kenyan institutions of higher learning, detailing their names, location and courses offered. Serves as a valuable resource for students, researchers, policymakers and organizations seeking comprehensive information on Kenya's higher learning education landscape.",
             },
             {
               img: "/assets/projects/Vector2.png",
-              title: "Climate Change AI",
-              desc: "Using AI to predict and mitigate climate risks",
+              title: "Afyaken",
+              desc: "AfyaKen is an open-access dataset on Kenyan healthcare facilities, providing key details and empowering policymakers, researchers, and innovators with data-driven insights to improve healthcare access and efficiency.",
             },
           ].map((item, index) => (
-            <div key={index} className="p-5 sm:p-6 border rounded-md shadow-sm bg-white">
+            <div
+              key={index}
+              className="p-5 sm:p-6 border rounded-md shadow-sm bg-white"
+            >
               <div className="flex justify-center">
-                <img src={item.img || "/placeholder.svg"} alt={item.title} width={64} height={64} />
+                <img
+                  src={item.img || "/placeholder.svg"}
+                  alt={item.title}
+                  width={64}
+                  height={64}
+                />
               </div>
-              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">{item.title}</h3>
-              <p className="text-gray-700 mt-2 text-sm sm:text-base">{item.desc}</p>
+              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">
+                {item.title}
+              </h3>
+              <p className="text-gray-700 mt-2 text-sm sm:text-base">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
 export default Projects;
-

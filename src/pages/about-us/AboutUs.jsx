@@ -63,14 +63,14 @@ const AboutUs = () => {
                 <img src={value} alt="Value Icon" width={64} height={64} />
               </div>
               <h3 className="sora-font font-bold text-lg sm:text-xl mt-3 text-gray-900">
-                {index === 0 ? "Integrity" : index === 1 ? "Collaboration" : "Innovation"}
+                {index === 0 ? "Excellence in Innovation" : index === 1 ? "Integrity and Impact" : "Collaboration for Growth"}
               </h3>
               <p className="sora-font text-gray-700 mt-2 text-base">
                 {index === 0
-                  ? "We prioritize ethical data practices and transparency."
+                  ? "We pursue cutting-edge solutions with a commitment to high-quality research, data, and technology—ensuring innovation is not just an idea, but a reality. We get things done with precision and efficiency."
                   : index === 1
-                  ? "We believe in the power of teamwork and diverse perspectives."
-                  : "We constantly push boundaries to find creative solutions."}
+                  ? "We believe in doing meaningful work, ethically. Our datasets, models, and infrastructure are built with responsibility and a deep focus on creating real, lasting change."
+                  : "We grow by lifting others.Whether through open data, community training, or partnerships, we believe in sharing knowledge and working together to build an inclusive ecosystem."}
               </p>
             </div>
           ))}

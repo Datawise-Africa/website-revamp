@@ -107,11 +107,11 @@ const Hero = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between h-full gap-8 lg:gap-12">
               {/* Text Section */}
               <div className="w-full lg:w-1/2 text-center lg:text-left">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-gray-900">
+                <h1 className="text-5xl lora-font text-gray-900">
                   {slides[currentIndex].title}
                 </h1>
                 <span
-                  className={`block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 font-serif ${slides[currentIndex].highlightColor}`}
+                  className={`block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 lora-font ${slides[currentIndex].highlightColor}`}
                 >
                   {slides[currentIndex].highlight}
                 </span>
