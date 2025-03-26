@@ -1,35 +1,41 @@
 import React from "react";
-import project_hero from "/assets/projects/Projects - Hero.svg"
-import vector1 from "/assets/projects/Vector1.png";
-import vector2 from "/assets/projects/Vector2.png";
-import vector3 from "/assets/projects/Vector3.png";
+// import { useNavigate } from "react-router-dom"
+// import project_hero from "/assets/projects/Projects - Hero.svg"
+// import vector1 from "/assets/projects/Vector1.png";
+// import vector2 from "/assets/projects/Vector2.png";
+// import vector3 from "/assets/projects/Vector3.png";
 
 const Projects = () => {
+  // const navigate = useNavigate();
+
   return (
-    <div className="container mx-auto pt-20 px-5 lg:px-15 xl:px-20 max-lg:py-4">
-      <section className="pt-5 grid grid-cols-1 md:grid-cols-2">
-        <div className="pt-15 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
-          <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
-            Driving Change <br /> Through
+    <div className="container mx-auto mt-10 md:mt-5 px-4 sm:px-6 py-8 sm:py-12 space-y-12">
+      {/* Hero Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="mt-10 lg:mt-0 text-center md:text-left">
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">
+            Driving Change Through
             <span className="text-[#26A37E]"> Data Research</span>
           </h1>
-          <p className="sora-font pt-6 pb-6 text-[#0F2542] font-normal text-[22px] leading-[167%] tracking-[-0.02em]">
-            Our research initiatives focus on solving Africa’s most pressing
-            challenges, from climate resilience to economic development
+          <p className="text-gray-800 mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
+            Our research initiatives focus on solving Africa's most pressing
+            challenges, from climate resilience to economic development.
+
           </p>
-          <button
-            type="submit"
-            className="flex items-center justify-center gap-2 bg-[#26A37E] text-white font-medium py-2 px-3 rounded-md hover:bg-[#1e8c68] transition duration-300"
-          >
-            Collaborate With Us
-            <span>
+          <div className="mt-6 flex justify-center md:justify-start">
+            <button
+              type="submit"
+              className="flex items-center gap-2 bg-[#26A37E] text-white font-medium py-2 px-4 rounded-md hover:bg-[#1e8c68] transition duration-300"
+              // onClick={navigate("/partners")}
+            >
+              Collaborate With Us
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="#fff"
+                fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="w-5 h-5 ml-1"
               >
                 <path
                   strokeLinecap="round"
@@ -37,143 +43,118 @@ const Projects = () => {
                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                 />
               </svg>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
-        <div>
+        <div className="flex justify-center mt-8 md:mt-0">
           <img
-            src={project_hero}
+            src="/assets/projects/Projects - Hero.svg"
             alt="Project Hero"
-            className="object-cover w-full h-full"
+            className="object-cover w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
           />
         </div>
       </section>
-      <section className="pt-4 pb-15">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="flex items-center justify-center">
-            <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center">
-              Focus Areas
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 pt-5 gap-6">
-            <div className="p-3 border border-[#AAE9F7] bg-[#AAE9F7] rounded-md">
-              <div className="">
+
+      {/* Focus Areas Section */}
+      <section className="text-center mt-12">
+        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">
+          Focus Areas
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+          {[
+            {
+              img: "/assets/projects/Vector1.png",
+              title: "AI for Development",
+              desc: "Leveraging AI to address social and economic challenges",
+              bg: "bg-sky-50 border-sky-200",
+            },
+            {
+              img: "/assets/projects/Vector2.png",
+              title: "Data Infrastructure",
+              desc: "Building sustainable and affordable compute solutions",
+              bg: "bg-pink-50 border-pink-200",
+
+            },
+            {
+              img: "/assets/projects/Vector3.png",
+              title: "Ethical Data Practices",
+              desc: "Ensuring data collection and usage are transparent and ethical",
+              bg: "bg-green-50 border-green-200",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className={`p-5 sm:p-6 border rounded-md shadow-sm ${item.bg}`}
+            >
+              <div className="flex justify-center">
                 <img
-                  src={vector1}
-                  alt="Group 1"
+                  src={item.img || "/placeholder.svg"}
+                  alt={item.title}
                   width={64}
                   height={64}
-                  className=""
                 />
               </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                AI for Development
+              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">
+                {item.title}
               </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Leveraging AI to address social and economic challenges
+              <p className="text-gray-700 mt-2 text-sm sm:text-base">
+                {item.desc}
               </p>
             </div>
-            <div className="p-3 border border-[#FCCEE4] bg-[#FCCEE4] rounded-md">
-              <div className="">
-                <img
-                  src={vector2}
-                  alt="Group 2"
-                  width={64}
-                  height={64}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                Data Infrastructure
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Building sustainable and affordable compute solutions
-              </p>
-            </div>
-            <div className="p-3 border border-[#B1E9D1] bg-[#B1E9D1] rounded-md">
-              <div className="">
-                <img
-                  src={vector3}
-                  alt="Group 3"
-                  width={40}
-                  height={40}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                Ethical Data Practices
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Ensuring data collection and usage are transparent and ethical
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
-      <section className="pt-4 pb-15">
-        <div className="max-w-[1200px] mx-auto px-4">
-          <div className="flex items-center justify-center">
-            <h2 className="lora-font font-bold text-[40px] leading-[100%] tracking-[-0.02em] text-center">
-              Featured Projects
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 pt-5 gap-6">
-            <div className="p-3 border border-[#AAE9F7] rounded-md">
-              <div className="">
+
+      {/* Featured Projects Section */}
+      <section className="text-center mt-12">
+        <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">
+          Featured Projects
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+          {[
+            {
+              img: "/assets/projects/Vector2.png",
+              title: "Datalab",
+              desc: "Datalab is a platform that maintains transparency in data use while ensuring creator sovereignty.It enable users discover datasets, upload datasets, and collaborate with others.",
+            },
+            {
+              img: "/assets/projects/Vector2.png",
+              title: "Eduken",
+              desc: "Eduken catalogs Kenyan institutions of higher learning, detailing their names, location and courses offered. Serves as a valuable resource for students, researchers, policymakers and organizations seeking comprehensive information on Kenya's higher learning education landscape.",
+            },
+            {
+              img: "/assets/projects/Vector2.png",
+              title: "Afyaken",
+              desc: "AfyaKen is an open-access dataset on Kenyan healthcare facilities, providing key details and empowering policymakers, researchers, and innovators with data-driven insights to improve healthcare access and efficiency.",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="p-5 sm:p-6 border rounded-md shadow-sm bg-white"
+            >
+              <div className="flex justify-center">
                 <img
-                  src={vector2}
-                  alt="Group 1"
+                  src={item.img || "/placeholder.svg"}
+                  alt={item.title}
                   width={64}
                   height={64}
-                  className=""
                 />
               </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                AI for Healthcare Access
+              <h3 className="font-bold text-lg sm:text-xl mt-4 text-gray-900">
+                {item.title}
               </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Improved diagnostic accuracy and reduced costs for rural clinics
+              <p className="text-gray-700 mt-2 text-sm sm:text-base">
+                {item.desc}
               </p>
+
             </div>
-            <div className="p-3 border border-[#AAE9F7] rounded-md">
-              <div className="">
-                <img
-                  src={vector2}
-                  alt="Group 2"
-                  width={64}
-                  height={64}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                AI for Healthcare Access
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Improved diagnostic accuracy and reduced costs for rural clinics
-              </p>
-            </div>
-            <div className="p-3 border border-[#B1E9D1] rounded-md">
-              <div className="">
-                <img
-                  src={vector2}
-                  alt="Group 3"
-                  width={40}
-                  height={40}
-                  className=""
-                />
-              </div>
-              <h3 className="sora-font font-bold text-[20px] leading-[150%] tracking-[-0.03em] text-left text-[#0F2542] pt-2">
-                AI for Healthcare Access
-              </h3>
-              <p className="sora-font text-[#0F2542] pt-2 text-left">
-                Improved diagnostic accuracy and reduced costs for rural clinics
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
+
     </div>
-  );
-};
+  )
+}
 
 export default Projects;

@@ -1,149 +1,133 @@
 import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import ContactCard from "../../components/ContactUs/ContactCard";
-import ContactForm from "../../components/ContactUs/ContactCard";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto w-full flex flex-col items-center p-6">
-      <section className="pt-40 ml-10 mr-10   grid grid-cols-1 md:grid-cols-2 ">
-        <div className=" mt-20 md:pt-20 lg:pt-15 pl-8 max-w-[700px] lg:max-w-[800px]">
-          <h1 className="lora-font font-bold text-[56px] leading-[100%] tracking-[-0.02em]">
+    <div className="container mx-auto mt-10 lg:mt-0 px-6 py-12 space-y-12">
+      
+      {/* Hero Section */}
+      <section className="mt-10 lg:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="text-center md:text-left">
+          <h1 className="lora-font font-bold text-4xl sm:text-5xl md:text-6xl leading-tight tracking-tight">
             We're Here to
-            
-            <span className="text-[#26A37E]"> Help !</span>
+            <span className="text-[#26A37E]"> Help!</span>
           </h1>
-          <p className="sora-font ml-2 pt-6 pb-6 text-gray-600 font-normal text-[22px] leading-[167%] tracking-[-0.02em]">
-            Have any questions, need support, or just want to learn more about
-            Datawise Africa ?
-            Reach out we'd love to hear from you.
+          <p className="sora-font text-gray-700 mt-6 text-lg sm:text-xl leading-relaxed">
+            Have any questions, need support, or just want to learn more about Datawise Africa?
+            Reach out—we'd love to hear from you.
           </p>
         </div>
-        <div className="md:pt-20 lg:pt-0 ml-34 mb-5 ">
+        <div className="flex justify-center">
           <img
-            className="w-full max-w-[580px] lg:h-[490.69px] top-[135.38px]"
+            className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl"
             src="/assets/contactus/contactUs.svg"
-            alt="contact us image"
+            alt="Contact Us"
           />
         </div>
       </section>
 
-      {/* Left Section - Contact Information */}
-      <div className=" flex flex-col md:flex-row justify-center items-center min-h-[800px] bg-[#F7FDFA] px-6 md:px-12">
+      {/* Contact Section */}
+      <div className="flex flex-col md:flex-row justify-center items-center bg-[#F7FDFA] px-6 py-12 rounded-lg shadow-sm">
+        
+        {/* Contact Information */}
+        <div className="bg-[#D1F2E5] p-6 md:p-8 rounded-lg shadow-lg w-full md:w-1/2 mb-8 md:mb-0">
+          <h2 className="text-2xl font-semibold text-gray-900">Contact Information</h2>
+          <p className="text-lg text-gray-600 mt-2">
+            For inquiries, feedback, or assistance, reach us at:
+          </p>
+          
+          <div className="mt-6 space-y-4">
+            {/* Phone Number */}
+            <div className="bg-white p-4 rounded shadow flex items-center">
+              <span className="text-green-600 text-2xl">📞</span>
+              <div className="ml-4">
+                <p className="text-lg font-semibold text-gray-900">Phone Number:</p>
+                <p className="text-gray-700 text-sm sm:text-base">+254 710 891 741</p>
+              </div>
+            </div>
 
-      <div className="bg-[#D1F2E5] md:p-8 rounded-lg shadow-lg w-full md:w-[580px] h-[600px] h-auto mb-8 ">
-        <h2 className="text-lg font-semibold text-[22px] text-gray-900 mt-2">
-          Contact Information
-        </h2>
-        <p className="text-sm text-gray-600 mt-1 text-[16px]">
-          For inquiries, feedback, or assistance, reach us at:
-        </p>
+            {/* Email Address */}
+            <div className="bg-white p-4 rounded shadow flex items-center">
+              <span className="text-green-600 text-2xl">📧</span>
+              <div className="ml-4">
+                <p className="text-lg font-semibold text-gray-900">Email Address:</p>
+                <p className="text-gray-700 text-sm sm:text-base">info@datawiseafrica.com</p>
+              </div>
+            </div>
 
-        <div className="mt-5 space-y-4">
-          {/* Phone Number */}
-          <div className="bg-white p-4 rounded shadow  items-center">
-            <span className="text-green-600 text-xl">📞</span>
-            <div className="ml-2 h-[60px]">
-              <p className="text-md font-semibold text-gray-900 mt-3">
-                Phone Number:
-              </p>
-              <p className="text-md text-gray-700">+254 712 345 678</p>
+            {/* Office Location */}
+            <div className="bg-white p-4 rounded shadow flex items-center">
+              <span className="text-green-600 text-2xl">📍</span>
+              <div className="ml-4">
+                <p className="text-lg font-semibold text-gray-900">Office Location:</p>
+                <p className="text-gray-700 text-sm sm:text-base">
+                  Magharibi Place, GAI1 Nairobi West, Kenya
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Form */}
+        <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg w-full md:w-1/2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* First Name */}
+            <div>
+              <label className="text-lg text-gray-900 font-medium">First Name</label>
+              <input
+                type="text"
+                placeholder="First Name"
+                className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 focus:ring-2 focus:ring-[#26A37E]"
+              />
+            </div>
+
+            {/* Last Name */}
+            <div>
+              <label className="text-lg text-gray-900 font-medium">Last Name</label>
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 focus:ring-2 focus:ring-[#26A37E]"
+              />
             </div>
           </div>
 
           {/* Email Address */}
-          <div className="bg-white p-4 rounded shadow  items-center">
-            <span className="text-green-600 text-xl">📧</span>
-            <div className="ml-1 mt-2 h-[60px]">
-              <p className="text-md font-semibold text-gray-900">
-                Email Address:
-              </p>
-              <p className="text-md text-gray-700">info@datawiseafrica.com</p>
-            </div>
-          </div>
-
-          {/* Office Location */}
-          <div className="bg-white p-4 rounded shadow  items-center mb-5">
-            <span className="text-green-600 text-xl">📍</span>
-            <div className="ml-1 mt-2 h-[80px] ">
-              <p className="text-md font-semibold text-gray-900">
-                Office Location:
-              </p>
-              <p className="text-md text-gray-700">
-                Magharibi Place, GAI1 Nairobi West, Kenya
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Right Section - Contact Form */}
-      <div className="bg-white  ml-12 md:p-8 rounded-lg shadow-lg w-800px md:w-[600px] min-h-[600px] mb-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
-          {/* First Name */}
-          <div >
-            <p className="text-md text-gray-900 text-[16px] mb-2 ">
-              First Name
-            </p>
+          <div className="mt-4">
+            <label className="text-lg text-gray-900 font-medium">Email Address</label>
             <input
-              type="text"
-              placeholder="First Name"
-              className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
+              type="email"
+              placeholder="Email Address"
+              className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 focus:ring-2 focus:ring-[#26A37E]"
             />
           </div>
 
-          {/* Last Name */}
-          <div>
-            <p className="text-md  text-gray-900 text-[16px] mb-2">
-              Last Name
-            </p>
+          {/* Subject */}
+          <div className="mt-4">
+            <label className="text-lg text-gray-900 font-medium">Your Subject</label>
             <input
               type="text"
-              placeholder="Last Name"
-              className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
+              placeholder="Your subject"
+              className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 focus:ring-2 focus:ring-[#26A37E]"
             />
           </div>
+
+          {/* Message */}
+          <div className="mt-4">
+            <label className="text-lg text-gray-900 font-medium">Message</label>
+            <textarea
+              placeholder="Input your message here"
+              className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 focus:ring-2 focus:ring-[#26A37E]"
+              rows="4"
+            />
+          </div>
+
+          {/* Submit Button */}
+          <button className="mt-6 w-full bg-[#26A37E] text-white text-lg font-semibold py-3 rounded-md hover:bg-green-700 transition duration-300">
+            Send Message
+          </button>
         </div>
 
-        {/* Email Address */}
-        <div className="mt-4">
-          <p className="text-md  text-gray-900 text-[16px] ">
-            Email Address
-          </p>
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
-          />
-        </div>
-
-        {/* Subject */}
-        <div className="mt-4">
-          <p className=" text-md text-gray-900 text-[16px]  ">
-            Your Subject
-          </p>
-          <input
-            type="text"
-            placeholder="Your subject"
-            className="w-full p-4 border-b-2 border-gray-800 outline-none text-sm bg-[#F6F6F6]"
-          />
-        </div>
-
-        {/* Message */}
-        <div className="mt-4">
-          <p className="text-md  text-gray-900 text-[16px] ">Message</p>
-          <textarea
-            placeholder="Input your message here "
-            className="w-full p-4 border-b-2 border-gray-800 border-outline-none text-sm bg-[#F6F6F6] "
-            rows="3"
-          />
-        </div>
-
-        <button className="mt-6 w-full bg-[#26A37E] text-white text-sm font-semibold py-3 rounded hover:bg-green-700 transition mb-6">
-          Send Message
-        </button>
       </div>
-    </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import datawise_logo from "/assets/datawise-logo-dark.png";
+// import datawise_logo from "/assets/datawise-logo-dark.png";
+import dwise_logo from "/assets/datawise-logo-icon-dark.svg";
 import { navigation } from "../../constants";
 
 const Header = () => {
@@ -60,10 +61,10 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-between px-5 lg:px-8 max-lg:py-4">
           <Link to="/" className="w-[12rem]">
             <img
-              src={datawise_logo}
+              src={dwise_logo}
               alt="Datawise logo"
               loading="lazy"
-              width={180}
+              width={80}
               height={20}
             />
           </Link>
@@ -140,7 +141,7 @@ const Header = () => {
             </nav>
             <button
               onClick={handleExploreDatasetsClick}
-              className="flex items-center justify-center bg-[#26A37E] text-[#E5E7EB] px-4 py-2 font-medium rounded-lg mt-4 lg:mt-0 w-48 lg:w-auto"
+              className="flex items-center justify-center bg-[#26A37E] text-[#E5E7EB] px-4 py-2 font-medium rounded-lg mt-4 lg:mt-0 w-48 lg:w-auto self-center"
             >
               Explore Datasets
               <span className="ml-1">
