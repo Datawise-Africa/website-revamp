@@ -20,6 +20,7 @@ const Projects = () => {
           <p className="text-gray-800 mt-4 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
             Our research initiatives focus on solving Africa's most pressing
             challenges, from climate resilience to economic development.
+
           </p>
           <div className="mt-6 flex justify-center md:justify-start">
             <button
@@ -72,6 +73,7 @@ const Projects = () => {
               title: "Data Infrastructure",
               desc: "Building sustainable and affordable compute solutions",
               bg: "bg-pink-50 border-pink-200",
+
             },
             {
               img: "/assets/projects/Vector3.png",
@@ -108,6 +110,7 @@ const Projects = () => {
         <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl">
           Featured Projects
         </h2>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {[
             {
@@ -144,13 +147,14 @@ const Projects = () => {
               <p className="text-gray-700 mt-2 text-sm sm:text-base">
                 {item.desc}
               </p>
+
             </div>
           ))}
         </div>
       </section>
 
     </div>
-  );
-};
+  )
+}
 
 export default Projects;

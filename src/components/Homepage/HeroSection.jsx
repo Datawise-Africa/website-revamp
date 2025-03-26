@@ -112,6 +112,7 @@ const Hero = () => {
                 </h1>
                 <span
                   className={`block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 lora-font ${slides[currentIndex].highlightColor}`}
+
                 >
                   {slides[currentIndex].highlight}
                 </span>
