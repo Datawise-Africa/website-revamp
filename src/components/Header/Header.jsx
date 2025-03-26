@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-// import datawise_logo from "/assets/datawise-logo-dark.png";
-import dwise_logo from "/assets/datawise-logo-icon-dark.svg";
+import datawise_logo from "/assets/datawise-logo-dark.png";
+// import dwise_logo from "/assets/datawise-logo-icon-dark.svg";
 import { navigation } from "../../constants";
 
 const Header = () => {
@@ -43,7 +43,7 @@ const Header = () => {
 
   const handleExploreDatasetsClick = () => {
     window.open(
-      "http://datalab.datawiseafrica.com",
+      "https://datalabrevamp.netlify.app",
       "_blank",
       "noopener,noreferrer"
     );
@@ -61,10 +61,10 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-between px-5 lg:px-8 max-lg:py-4">
           <Link to="/" className="w-[12rem]">
             <img
-              src={dwise_logo}
+              src={datawise_logo}
               alt="Datawise logo"
               loading="lazy"
-              width={80}
+              width={180}
               height={20}
             />
           </Link>

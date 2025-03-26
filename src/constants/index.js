@@ -94,7 +94,7 @@ export const teamMembers = [
   },
   {
     id: "4",
-    name: "Winny Chelangat",
+    name: "Winny C. Sigilai",
     title: "Software Engineer",
     image: "/assets/teamMembers/winny.jpg",
     description: "",

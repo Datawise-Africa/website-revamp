@@ -40,7 +40,7 @@ const Partners = () => {
       >
         <div className="bg-[#26A37E] text-white rounded-xl p-10 sm:p-14 flex flex-col md:flex-row items-center gap-10 sm:gap-16 md:gap-20">
           <div className="md:w-2/3 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold font-serif">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold lora-font">
               Partner With Us
             </h3>
             <p className="mt-4 text-sm sm:text-base leading-relaxed">
