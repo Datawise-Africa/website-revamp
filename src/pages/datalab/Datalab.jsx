@@ -9,7 +9,7 @@ import icon6 from "/assets/datalab6.png";
 import icon7 from "/assets/datalab7.png";
 const handleExploreDatasetsClick = () => {
   window.open(
-    "http://datalab.datawiseafrica.com",
+    "https://datalabrevamp.netlify.app",
     "_blank",
     "noopener,noreferrer"
   );
