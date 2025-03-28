@@ -11,9 +11,11 @@ const AboutUs = () => {
           Driving Africa's Data and AI Revolution
         </h1>
         <p className="text-[#0F2542] text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
-          At Datawise Africa, research is at our core. We explore the
-          intersections of data, AI, and infrastructure, building solutions
-          tailored for Africa’s needs but with a global perspective.
+          We are a research and development company conducting applied research
+          in Data and AI while building the critical infrastructure and tools to
+          connect the two. Our goal is to leverage Data to develop AI and other
+          tools that are relevant and appropriate for the communities we live in
+          while building research capacity and leadership in the continent.
         </p>
         <a
           href="/about-us"
