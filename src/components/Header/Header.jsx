@@ -43,7 +43,7 @@ const Header = () => {
 
   const handleExploreDatasetsClick = () => {
     window.open(
-      "https://datalabrevamp.netlify.app",
+      "https://datalab.datawiseafrica.com",
       "_blank",
       "noopener,noreferrer"
     );
